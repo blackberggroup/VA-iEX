@@ -1,4 +1,8 @@
+@use "uswds-core" as *;
+
 .iex-about {
+    background-color: #{color("base-lightest")};
+
     &__image {
         position: relative;
     }

@@ -1,0 +1,38 @@
+.iex-registration {
+    background-image: url('../../assets/img/iex-2023/registration-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(10, 19, 36,.9);
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__svg-wrapper {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    &__content-wrapper {
+        position: relative;
+        z-index: 20;
+    }
+
+    .usa-card {
+
+        &__container {
+            border: none;
+        }
+
+    }
+
+}

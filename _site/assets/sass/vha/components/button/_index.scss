@@ -6,3 +6,33 @@
         color: #{color("base-lightest")};
     }
 }
+
+.vha-button--yellow {
+    background-color: #FBCF39;
+    color: #{color("base-darkest")};
+
+    &:visited {
+        color: #{color("base-darkest")};
+    }
+
+    &:hover {
+        background-color: #ecc135;
+        color: #{color("base-darkest")};
+    }
+
+}
+
+.vha-button--teal {
+    background-color: #009485;
+    color: #fff;
+
+    &:visited, {
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: #00887a;
+        color: #fff;
+    }
+
+}
