@@ -21,7 +21,11 @@ h4, .h4 {
     @include font-size(18px);
 }
 
-.heading-subtitle {
-    font-weight: bold;
-    color: var(--red-8);
-}
+.display-1 { @include font-size(80px);}
+.display-2 { @include font-size(72px);}
+.display-3 { @include font-size(64px);}
+.display-4 { @include font-size(56px);}
+.display-5 { @include font-size(48px);}
+.display-6 { @include font-size(40px);}
+
+.font-condensed-bold { font-family: "Myriad-Pro-Condensed", Helvetica, arial, sans-serif; }

@@ -8,7 +8,7 @@ in the form $setting: value,
 */
 
 
- @use "uswds-core" with (
+@use "uswds-core" with (
   $theme-utility-breakpoints: (
     'card':              false,   // 160px
     'card-lg':           false,   // 240px
@@ -44,8 +44,4 @@ in the form $setting: value,
   $theme-identifier-max-width: "widescreen",
 
   $theme-card-border-width: 1px,
-
-  $theme-color-base-family: "base-ligher",
-  $theme-color-base-lighter: "gray-70",
-  $theme-color-base-ink: "gray-1",
 );

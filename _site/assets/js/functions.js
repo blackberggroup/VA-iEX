@@ -58,3 +58,14 @@ $('.scroll').on('click',function(e) {
 $(function() {
 	$('.lazy').Lazy();
 });
+
+$(function() {
+	$('#clock').countdown('2023/10/10').on('update.countdown', function(event) {
+		var $this = $(this).html(event.strftime(''		  
+		  + '<div class="grid-col"><span class="display-4">%D</span> <br /><span class="h3">Day%!d</span></div> '
+		  + '<div class="grid-col"><span class="display-4">%H</span> <br /><span class="h3">Hours</span></div> '
+		  + '<div class="grid-col"><span class="display-4">%M</span> <br /><span class="h3">Minutes</span></div> '
+		  + '<div class="grid-col"><span class="display-4">%S</span> <br /><span class="h3">Seconds</span></div> '));
+	  });
+});
+

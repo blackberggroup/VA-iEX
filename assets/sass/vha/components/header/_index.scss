@@ -1,16 +1,31 @@
 @use "uswds-core" as *;
 
-.usa-logo__text {
-    font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
-    
-    span {
-        font-weight: 100;
-        font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
-    }
+.usa-header {
+    background-color: #0e1d33;
 }
+
+.usa-logo {
+    a {
+        color: #fff;
+    }
+
+    &__text {
+        font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+        color: #fff;
+
+        span {
+            font-weight: 100;
+            font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+        }
+
+    }
+    
+}
+
 .usa-nav .usa-accordion {
     font-family: "Myriad-Pro", Helvetica, arial, sans-serif;
 }
+
 .usa-nav__primary button {
     color: #fff;
 
