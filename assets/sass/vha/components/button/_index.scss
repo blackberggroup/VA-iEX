@@ -1,13 +1,10 @@
 @use "uswds-core" as *;
 
-.vha-button {
-    &.usa-button--outline.usa-button--inverse {
-        box-shadow: inset 0 0 0 2px #{color("base-lightest")};
-        color: #{color("base-lightest")};
-    }
+.button-vha {
+    font-family: "Myriad-Pro", helvetica, arial, sans-serif;
 }
 
-.vha-button--yellow {
+.button-vha--yellow {
     background-color: #FBCF39;
     color: #{color("base-darkest")};
 
@@ -22,7 +19,7 @@
 
 }
 
-.vha-button--teal {
+.button-vha--teal {
     background-color: #009485;
     color: #fff;
 

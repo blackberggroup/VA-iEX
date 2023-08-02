@@ -1,3 +1,11 @@
-.iex-keynote-speakers {
-    background-image: url('../../assets/img/iex-2023/keynote-speakers-bg.png');
+@use "uswds-core" as *;
+
+.iex-breakout-tracks {
+    background-color: #{color("base-lightest")};
+
+    &__card {
+        position: relative;
+        z-index: 30;
+    }
+
 }
