@@ -9,4 +9,30 @@
         z-index: 30;
     }
 
+    &__card-description-col {
+
+        p {
+            margin-top: 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &:after {
+
+            @include at-media(tablet-lg) {
+                content: '';
+                height: 100%;
+                background-color: #DFE1E2;
+                width: 1px;
+                position: absolute;
+                top: 0;
+                left: -16px;
+            }
+        
+        }
+
+    }
+
 }
