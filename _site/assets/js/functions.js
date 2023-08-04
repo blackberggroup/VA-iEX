@@ -60,7 +60,7 @@ $(function() {
 });
 
 $(function() {
-	$('#clock').countdown('2023/10/10').on('update.countdown', function(event) {
+	$('#clock').countdown('2023/10/31').on('update.countdown', function(event) {
 		var $this = $(this).html(event.strftime(''		  
 		  + '<div class="grid-col"><span class="display-4">%D</span> <br /><span class="h3">Day%!d</span></div> '
 		  + '<div class="grid-col"><span class="display-4">%H</span> <br /><span class="h3">Hours</span></div> '
