@@ -228,13 +228,12 @@
           <section id="iex-hero" class="iex-hero mobile:padding-y-3 tablet:padding-y-6 desktop-lg:padding-y-10">
     <div class="iex-hero__logo-container">
         <div class="iex-hero__logo desktop-lg:padding-y-7">
-            <img
-            sizes="(max-width: 1600px) 100vw, 1600px"
-            srcset="
-            ../assets/img/iex-2023/hero-logo-05x.png 992w,
-            ../assets/img/iex-2023/hero-logo.png 1600w"
-            src="../assets/img/iex-2023/hero-logo.png"
-            alt="2023 Innovation Experience Logo. Large X in center with images on innovators off to the left and right.">            
+            <picture>
+                <source srcset="../assets/img/iex-2023/hero-logo-05x.png" media="(max-width: 992px)">
+                <source srcset="../assets/img/iex-2023/hero-logo.png" media="(max-width: 1600px)">
+                <img src="../assets/img/iex-2023/hero-logo.png" alt="2023 Innovation Experience Logo. Large X in center with images on innovators off to the left and right." 
+                  loading="lazy" class="responsive" decoding="async">
+              </picture>
         </div>     
     </div>
 </section>
@@ -258,8 +257,8 @@
         <div class="grid-row grid-gap flex-align-center">
             <div class="grid-col-12 tablet-lg:grid-col-6 mobile:order-2 tablet-lg:order-1">
                 <div class="iex-about__image">
-                    <img src="../assets/img/iex-2023/about-large.png" title="iEX speaker" class="iex-about__image-large radius-lg responsive" />
-                    <img src="../assets/img/iex-2023/about-small.png" title="iEX speaker" class="iex-about__image-small radius-lg" />
+                    <img src="../assets/img/iex-2023/about-large.png" alt="male iEX speaker on stage" class="iex-about__image-large radius-lg responsive" />
+                    <img src="../assets/img/iex-2023/about-small.png" alt="female iEX panelist" class="iex-about__image-small radius-lg" />
                 </div>
             </div>
             <div class="grid-col-12 tablet-lg:grid-col-6 widescreen:grid-col-5 widescreen:grid-offset-1 mobile:order-1 tablet-lg:order-2">
