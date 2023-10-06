@@ -1,8 +1,8 @@
 @use "uswds-core" as *;
 
 .divisions {
-
-    &__item {
+ 
+    &__item { 
         border-radius: 8px;
         overflow: hidden;
         transition: .3s ease;
