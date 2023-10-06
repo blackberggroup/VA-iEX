@@ -1,0 +1,126 @@
+@use "uswds-core" as *;
+
+.divisions {
+
+    &__item {
+        border-radius: 8px;
+        overflow: hidden;
+        transition: .3s ease;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        position: relative;
+        height: 475px;    
+        margin-bottom: 30px;   
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+
+        &:hover {
+
+            @include at-media(desktop) {    
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, .3);
+                margin-top: -8px;
+            }
+        }
+
+        @include at-media(tablet) {
+            height: 350px;
+        }
+
+        @include at-media(desktop) {
+            height: 400px;            
+        }
+
+        &-wrapper {
+            position: relative;
+            z-index: 10;
+            color: #fff;            
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            height: 100%;
+            width: 100%;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+        }
+
+        &-title {
+            margin: 0;
+        }
+
+        &-description {
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        &-link {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        &-bg-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(0deg, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 0) 60%);
+        }
+
+        &--healthcare {
+            background-image: url('../img/home/division-healthcare-mobile.png');
+
+            @include at-media(mobile-lg) {
+                background-image: url('../img/home/division-healthcare-desktop.png');
+            }            
+        }
+
+        &--learning {
+            background-image: url('../img/home/division-learning-mobile.png');
+
+            @include at-media(mobile-lg) {
+                background-image: url('../img/home/division-learning-desktop.png');
+            }            
+        }
+        
+        &--payment {
+            background-image: url('../img/home/division-payment-mobile.png');
+
+            @include at-media(mobile-lg) {
+                background-image: url('../img/home/division-payment-desktop.png');
+            }            
+        }
+        
+        &--manufacturing {
+            background-image: url('../img/home/division-manufacturing-mobile.png');
+
+            @include at-media(mobile-lg) {
+                background-image: url('../img/home/division-manufacturing-desktop.png');
+            }            
+        }
+        
+        &--immersive {
+            background-image: url('../img/home/division-immersive-mobile.png');
+
+            @include at-media(mobile-lg) {
+                background-image: url('../img/home/division-immersive-desktop.png');
+            }            
+        }
+        
+        &--iex {
+            background-image: url('../img/home/division-iex-mobile.png');
+
+            @include at-media(mobile-lg) {
+                background-image: url('../img/home/division-iex-desktop.png');
+            }            
+        }        
+    }
+}
