@@ -1,0 +1,17 @@
+@use "uswds-core" as *;
+
+.home-introduction {
+
+    h1 {
+        color: #{color("primary-vivid")};
+    }
+
+    &__content {
+        text-align: left;
+
+        @include at-media(tablet-lg) {
+            text-align: center;
+        }
+
+    }
+}

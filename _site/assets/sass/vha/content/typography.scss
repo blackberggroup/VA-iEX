@@ -1,8 +1,13 @@
+@use "uswds-core" as *;
 @import "../../../../node_modules/rfs/scss";
 
 p {
     font-size: 1rem;
     line-height: 1.6;
+}
+
+.intro {
+    @include font-size(22px);
 }
 
 h1, .h1 {

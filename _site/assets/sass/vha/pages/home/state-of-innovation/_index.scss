@@ -1,0 +1,75 @@
+@use "uswds-core" as *;
+
+.state-of-innovation {
+
+    &__container {
+        background-color: #002F49;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 10;
+    }
+
+    &__image {
+        position: relative;
+        z-index: 10;
+    }
+
+    &__background {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/home/soi-va-watermark.png');
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
+
+        @include at-media(tablet) {
+            bottom: -100px;
+            right: -50px;
+        }
+        
+        @include at-media(tablet-lg) {
+            bottom: 0;
+            right: -300px;
+        }
+
+        @include at-media(desktop) {
+            bottom: 0;
+            right: -200px;
+        }
+
+        @include at-media(desktop-lg) {
+            bottom: 0;
+            right: -100px;
+        }
+
+        @include at-media(widescreen) {
+            bottom: 0;
+            right: 0;
+        }
+
+    }    
+    
+    .title {
+        position: relative;
+
+        .title-1 {
+            font-size:  70px;
+            line-height: 1;
+        }
+
+        .title-2 {
+            display: inline-block;
+            font-size: 30px;
+            margin-left: 6px;
+            line-height: 1;
+        }
+    }   
+}
