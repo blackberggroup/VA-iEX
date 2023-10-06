@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Embrace a world of possibilities as we pave the way for cutting-edge advancements, foster growth through immersive learning experiences, and drive transformative changes in healthcare.">
   <title>VHA - Office of Healthcare Innovation and Learning</title>
 
   <meta property="og:title" content="Office of Healthcare Innovation and Learning">
@@ -239,7 +238,7 @@
             <div class="grid-row grid-gap flex-align-center">
                 <div class="col-12 desktop-lg:grid-col-10 desktop-lg:grid-offset-1">
                     <p class="intro margin-top-0 text-center text-white">Transformative initiatives to improve the well-being of our Veterans</p>
-                    <div class="hero__logo">
+                    <div class="hero__logo" data-parallax='{"y": -40 }'>
                         <picture>
                             <source media="(max-width:580px)" srcset="assets/img/home/logo-mobile.png">
                             <source media="(max-width:800px)" srcset="assets/img/home/logo-tablet.png">
@@ -269,29 +268,26 @@
             </div>
         </div>
     </div>
+    <div class="home-introduction__blur home-introduction__blur--1"></div>
+    <div class="home-introduction__blur home-introduction__blur--2"></div>
 </section>
 <!-- INTRODUCTION - END -->
             <!-- STATE OF INNOVATION - START -->
 <section id="soi" class="state-of-innovation mobile:padding-bottom-8 tablet:padding-bottom-10 desktop-lg:padding-bottom-15">
     <div class="grid-container">
-        <div class="state-of-innovation__container mobile:padding-3 desktop:padding-5 radius-lg">
+        <div class="state-of-innovation__container padding-3 desktop:padding-5 radius-lg">
             <div class="grid-row grid-gap flex-align-center">
                 <div class="col-12 tablet-lg:grid-col-6 state-of-innovation__content text-white">
-                    <div title="VHA 2023 State of Innovation Report" class="title display-flex flex-align-start font-condensed-bold text-uppercase margin-0">
-                        <span class="title-1">VHA</span>
-                        <span class="title-2">2023 State of <br />Innovation Report</span>
-                    </div>
+                    <img src="assets/img/home/vha-soi-title.png" alt="VHA State of Innovation Report" class="imag-fluid" width="320"/>
                     <p>Welcome to the 2023 State of Innovation Report, an annual publication from VHA's Office of Healthcare Innovation and Learning! With the theme of "Delivering on the Mission: Fostering Trust and Transforming Care," this year's report focuses on educating and empowering Veterans to engage with the innovative projects and programs that are most relevant to their health care journeys.</p>
                     <p>We encourage eligible Veterans to scan available QR codes, reach out to available email addresses, and ask their VA care teams for more information and guidance on taking advantage of the projects featured in this report. Our providers look forward to hearing from you!</p>
                     <p><a href="#" class="usa-button button-vha button-vha--yellow">Download PDF</a></p>
                 </div>
-                <div class="col-12 tablet-lg:grid-col-6 state-of-innovation__image text-white">
-                    <a href="#"><img src="assets/img/home/soi-book.png" alt="" class="image-fluid" /></a>
+                <div class="col-12 tablet-lg:grid-col-6 state-of-innovation__image">
+                    <a href="#"><img src="assets/img/home/soi-book.png" alt="Image of SOI booklet" class="image-fluid" data-parallax='{"y": 30 }' /></a>
                 </div>
             </div>
-            <div class="state-of-innovation__background">
-                <div class="state-of-innovation__yellow-element"></div>
-            </div>
+            <div class="state-of-innovation__background"></div>
         </div>
     </div>
 </section>
@@ -525,6 +521,7 @@
 
     <script src="assets/uswds/js/uswds.min.js"></script>
     <script src="assets/js/vendors/lazy/jquery.lazy.min.js"></script>
+    <script src="assets/js/vendors/parallax-scroll/jquery.parallax-scroll.js"></script>
     <script src="assets/js/functions.js"></script>
 
   </body>

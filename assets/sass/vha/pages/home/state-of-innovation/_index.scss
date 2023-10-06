@@ -59,13 +59,23 @@
     
     .title {
         position: relative;
+        height: 100px;
 
         .title-1 {
+            border: 1px solid red;
+            position: absolute;
+            top: 0;
+            left: 0;
             font-size:  70px;
             line-height: 1;
         }
 
         .title-2 {
+            border: 1px solid teal;
+            position: absolute;
+            top: 0;
+            left: 0;
+
             display: inline-block;
             font-size: 30px;
             margin-left: 6px;

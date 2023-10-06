@@ -1,6 +1,7 @@
 @use "uswds-core" as *;
 
 .home-introduction {
+    position: relative;
 
     h1 {
         color: #{color("primary-vivid")};
@@ -13,5 +14,31 @@
             text-align: center;
         }
 
+    }
+
+    &__blur {
+        position: absolute;
+        width: 340px;
+        height: 340px;
+
+        filter: blur(152px);
+
+        @include at-media(tablet-lg) {
+            width: 450px;
+            height: 450px;
+        }
+
+
+        &--1 {
+            left: -314px;
+            top: -250px;            
+            background: rgba(173, 0, 255, 0.3);
+        }
+
+        &--2 {
+            right: -314px;
+            top: -250px;            
+            background: rgba(0, 80, 216, 0.4);
+        }
     }
 }
