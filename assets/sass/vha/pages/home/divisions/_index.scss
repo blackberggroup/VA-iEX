@@ -76,50 +76,50 @@
         }
 
         &--healthcare {
-            background-image: url('../img/home/division-healthcare-mobile.png');
+            background-image: url('../img/home/division-healthcare-mobile.webp');
 
             @include at-media(mobile-lg) {
-                background-image: url('../img/home/division-healthcare-desktop.png');
+                background-image: url('../img/home/division-healthcare-desktop.webp');
             }            
         }
 
         &--learning {
-            background-image: url('../img/home/division-learning-mobile.png');
+            background-image: url('../img/home/division-learning-mobile.webp');
 
             @include at-media(mobile-lg) {
-                background-image: url('../img/home/division-learning-desktop.png');
+                background-image: url('../img/home/division-learning-desktop.webp');
             }            
         }
         
         &--payment {
-            background-image: url('../img/home/division-payment-mobile.png');
+            background-image: url('../img/home/division-payment-mobile.webp');
 
             @include at-media(mobile-lg) {
-                background-image: url('../img/home/division-payment-desktop.png');
+                background-image: url('../img/home/division-payment-desktop.webp');
             }            
         }
         
         &--manufacturing {
-            background-image: url('../img/home/division-manufacturing-mobile.png');
+            background-image: url('../img/home/division-manufacturing-mobile.webp');
 
             @include at-media(mobile-lg) {
-                background-image: url('../img/home/division-manufacturing-desktop.png');
+                background-image: url('../img/home/division-manufacturing-desktop.webp');
             }            
         }
         
         &--immersive {
-            background-image: url('../img/home/division-immersive-mobile.png');
+            background-image: url('../img/home/division-immersive-mobile.webp');
 
             @include at-media(mobile-lg) {
-                background-image: url('../img/home/division-immersive-desktop.png');
+                background-image: url('../img/home/division-immersive-desktop.webp');
             }            
         }
         
         &--iex {
-            background-image: url('../img/home/division-iex-mobile.png');
+            background-image: url('../img/home/division-iex-mobile.webp');
 
             @include at-media(mobile-lg) {
-                background-image: url('../img/home/division-iex-desktop.png');
+                background-image: url('../img/home/division-iex-desktop.webp');
             }            
         }        
     }
