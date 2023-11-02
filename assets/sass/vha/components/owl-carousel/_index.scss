@@ -332,11 +332,11 @@
   
   .owl-carousel .owl-nav button {
     &.owl-prev > span {
-      content: url('../../assets/uswds/img/usa-icons-bg/arrow_back--white.svg');
+      content: url('/assets-3-5/uswds/img/usa-icons-bg/arrow_back--white.svg');
     }
   
     &.owl-next > span {
-      content: url('../../assets/uswds/img/usa-icons-bg/arrow_back--white.svg');
+      content: url('/assets-3-5/uswds/img/usa-icons-bg/arrow_back--white.svg');
       transform: rotate(-180deg);
   
       /* Safari */
