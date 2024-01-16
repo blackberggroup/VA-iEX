@@ -100,4 +100,14 @@
         url(../../assets-3-5/uswds/fonts/myriad-pro/MyriadPro-BoldIt.woff2)format("woff2");
 }
 
+@font-face{
+    font-family:"Myriad-Pro-Condensed";
+    font-style:normal;
+    font-weight:700;
+    src:url(../../assets-3-5/uswds/fonts/myriad-pro/myriad-pro-bold-condensed_pa4hra.woff)format("woff"),
+        url(../../assets-3-5/uswds/fonts/myriad-pro/myriad-pro-bold-condensed_c0wb3w.woff2)format("woff2");
+}
+
 body { font-family: "Myriad-Pro", Helvetica, arial, sans-serif; }
+
+.font-condensed-bold{font-family:"Myriad-Pro-Condensed",Helvetica,arial,sans-serif}
