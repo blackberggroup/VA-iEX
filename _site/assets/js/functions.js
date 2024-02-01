@@ -54,10 +54,11 @@ $('.scroll').on('click',function(e) {
 	});
 });
 
-
-$(function() {
-	$('.lazy').Lazy();
-});
+if ($('.lazy').length > 0) {
+	$(function() {
+		$('.lazy').Lazy();
+	});
+}
 
 if ($('#clock').length > 0) {
 	$(function() {
