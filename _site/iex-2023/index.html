@@ -20,6 +20,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="../assets-3-5/uswds/js/uswds-init.min.js"></script>
+</head>
 
   <body>
  
@@ -91,58 +92,6 @@
 
 <!-- END USWDS Banner, gov domain -->
 
-<!-- Begin USWDS Modal -->
-<div>
-  <div class="usa-modal vcl-modal" id="example-modal-1" aria-labelledby="modal-1-heading"
-    aria-describedby="modal-1-description">
-    <div class="usa-modal__content">
-      <div class="usa-modal__main">
-        <h2 class="usa-modal__heading vcl-modal__title" id="modal-1-heading">
-          We&rsquo;re here anytime, day or night - 24/7
-        </h2>
-        <div class="usa-prose">
-          <p id="modal-1-description">
-            If you are a Veteran in crisis or concerned about one, connect with our caring, qualified responders for
-            confidential help. Many of them are Veterans themselves.
-          </p>
-          <ul>
-            <li class="display-flex border-top-1px border-bottom-1px">
-              <a href="tel:18002738255" tabindex="0" id="vcl-crisis-primary" class="vcl-call">
-                Call <strong>
-                  1-800-273-8255 and press
-                  1
-                </strong>
-              </a>
-            </li>
-            <li class="display-flex border-bottom-1px">
-              <a href="sms:838255" class="vcl-text"> Text to <b>838255</b></a>
-            </li>
-            <li class="display-flex border-bottom-1px">
-              <a href="https://www.veteranscrisisline.net/ChatTermsOfService.aspx?account=Veterans%20Chat"
-                class="vcl-chat"> Chat
-                <b>confidentially now</b></a>
-            </li>
-            <li class="display-flex border-bottom-1px">
-              <a href="tel:18007994889" class="vcl-tty">
-                Call TTY if you
-                have hearing loss <strong>1-800-799-4889</strong>
-              </a>
-            </li>
-          </ul>
-          <p class="font-sans-xs">Get more resources at <a
-              href="https://www.veteranscrisisline.net/">VeteransCrisisLine.net</a>.</p>
-        </div>
-      </div>
-      <button type="button" class="usa-button usa-modal__close" aria-label="Close this window" data-close-modal>
-        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-          <use xlink:href="../assets-3-5/uswds/img/sprite.svg#close"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-<!-- END USWDS Modal popup -->
-
 <!-- BEGIN USWDS Header, extended -->
 <header class="usa-header usa-header--extended tablet-lg:padding-top-3">
   <div class="usa-navbar">
@@ -156,7 +105,7 @@
   <nav aria-label="Primary navigation" class="usa-nav">
     <div class="usa-nav__inner">
       <button type="button" class="usa-nav__close">
-        <img src="assets-3-5/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
+        <img src="../assets-3-5/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
       </button>  
       <ul class="usa-nav__primary usa-accordion">
         <li class="usa-nav__primary-item" title="Home">
@@ -507,7 +456,7 @@
               title="U.S. Department of Veterans Affairs" alt="Logo for the U.S. Department of Veterans Affairs" />
           <!--</div>-->
           <!--<div class="mobile-lg:grid-col-auto">-->
-            <p class="usa-footer__logo-heading"><h3 class="font-serif-lg text-bold">In Crisis? Get Help Now</h3>
+            <p class="usa-footer__logo-heading"><h2 class="font-serif-lg text-bold">In Crisis? Get Help Now</h2>
               <a href="http://www.veteranscrisisline.net/" title="Get Help Now for Veterans in Crisis"><button type="button" class="usa-button">Veterans Crisis Line</button></a>
             </p>
           </div>
@@ -622,6 +571,58 @@
     </section>
   </div>
 </footer>
+
+<!-- Begin USWDS Modal -->
+<div>
+  <div class="usa-modal vcl-modal" id="example-modal-1" aria-labelledby="modal-1-heading"
+    aria-describedby="modal-1-description">
+    <div class="usa-modal__content">
+      <div class="usa-modal__main">
+        <h2 class="usa-modal__heading vcl-modal__title" id="modal-1-heading">
+          We&rsquo;re here anytime, day or night - 24/7
+        </h2>
+        <div class="usa-prose">
+          <p id="modal-1-description">
+            If you are a Veteran in crisis or concerned about one, connect with our caring, qualified responders for
+            confidential help. Many of them are Veterans themselves.
+          </p>
+          <ul>
+            <li class="display-flex border-top-1px border-bottom-1px">
+              <a href="tel:18002738255" tabindex="0" id="vcl-crisis-primary" class="vcl-call">
+                Call <strong>
+                  1-800-273-8255 and press
+                  1
+                </strong>
+              </a>
+            </li>
+            <li class="display-flex border-bottom-1px">
+              <a href="sms:838255" class="vcl-text"> Text to <b>838255</b></a>
+            </li>
+            <li class="display-flex border-bottom-1px">
+              <a href="https://www.veteranscrisisline.net/ChatTermsOfService.aspx?account=Veterans%20Chat"
+                class="vcl-chat"> Chat
+                <b>confidentially now</b></a>
+            </li>
+            <li class="display-flex border-bottom-1px">
+              <a href="tel:18007994889" class="vcl-tty">
+                Call TTY if you
+                have hearing loss <strong>1-800-799-4889</strong>
+              </a>
+            </li>
+          </ul>
+          <p class="font-sans-xs">Get more resources at <a
+              href="https://www.veteranscrisisline.net/">VeteransCrisisLine.net</a>.</p>
+        </div>
+      </div>
+      <button type="button" class="usa-button usa-modal__close" aria-label="Close this window" data-close-modal>
+        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="../assets-3-5/uswds/img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- END USWDS Modal popup -->
 
 <a href="#" class="back-to-top text-center padding-1" title="Return to the top of the page"><span class="show">TOP</span><img src="../assets-3-5/img/icons/arrow-alt-circle-up-solid.svg" width="26" height="26" alt="Back to top icon"/></a>
 
