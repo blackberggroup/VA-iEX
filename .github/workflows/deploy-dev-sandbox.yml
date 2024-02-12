@@ -43,7 +43,7 @@ jobs:
     - name: 👀 Lighthouse
       uses: foo-software/lighthouse-check-action@master
       with:
-        urls: 'http://dev-innovation.bgsandbox.com/hil/index.html, https://www.http://dev-innovation.bgsandbox.com/hil/views/about/biographies.html '
+        urls: 'https://dev-innovation.bgsandbox.com/hil/index.html, https://www.http://dev-innovation.bgsandbox.com/hil/views/about/biographies.html '
         device: all  
         awsAccessKeyId: ${{ secrets.LIGHTHOUSE_CHECK_AWS_ACCESS_KEY_ID }}
         awsBucket: ${{ secrets.LIGHTHOUSE_CHECK_AWS_BUCKET }}
