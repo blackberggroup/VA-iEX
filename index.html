@@ -4,49 +4,39 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta name="description" content="Embrace a world of possibilities as we pave the way for cutting-edge advancements, foster growth through immersive learning experiences, and drive transformative changes in healthcare.">
-  <title>VHA - Office of Healthcare Innovation and Learning</title>
+  <meta name="description" content="The 2023 Veterans Health Administration (VHA) Innovation Experience (iEX) is an exciting opportunity to be at the forefront of change alongside your fellow innovators, VA employees, Veterans, Industry Leaders, and researchers.">
+  <title>2023 Innovation Experience - Innovators, Welcome Home!</title>
 
-  <meta property="og:title" content="Office of Healthcare Innovation and Learning">
-  <meta property="og:url" content="https://innovation.va.gov/hil/">
-  <meta property="og:description" content="Embrace a world of possibilities as we pave the way for cutting-edge advancements, foster growth through immersive learning experiences, and drive transformative changes in healthcare.">
+  <meta property="og:title" content="2023 Innovation Experience">
+  <meta property="og:url" content=https://innovation.va.gov/hil/views/iex-2023/>
+  <meta property="og:description" content="The 2023 Veterans Health Administration (VHA) Innovation Experience (iEX) is an exciting opportunity to be at the forefront of change alongside your fellow innovators, VA employees, Veterans, Industry Leaders, and researchers.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://innovation.va.gov/hil/assets-3-5/img/home/og-image.jpg">
+  <meta property="og:image" content="https://innovation.va.gov/hil/views/iex-2023/assets/img/iex-2023/og-image.jpg">
 
-  <link
-    rel="preload"
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    as="style"
-    onload="this.onload=null;this.rel='stylesheet'"
-  />
-  <noscript>
-      <link
-          href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet"
-          type="text/css"
-      />
-  </noscript>
-
-  <link rel="stylesheet" href="assets-3-5/css/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="assets-3-5/css/styles.css"> _styles.css no banner dropdown -->
+  <link rel="stylesheet" href="assets/css/styles.css">
   
-  <link id="favicon" rel="shortcut icon" href="assets-3-5/img/favicon.ico">
+  <link id="favicon" rel="shortcut icon" href="assets/img/favicon.ico">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <script src="assets-3-5/uswds/js/uswds-init.min.js" async></script>
+  <script src="assets/uswds/js/uswds-init.min.js"></script>
 </head>
 
   <body>
-
+ 
     <!-- SITE WRAPPER - START -->
     <div class="site-wrapper">
-      
       {% include "header.html" %}
       
         <main>
-            {% include "home/hero.html" %}
-            {% include "home/introduction.html" %}
-            {% include "home/state-of-innovation.html" %}
-            {% include "home/divisions.html" %} 
+          {% include "iex-2023/hero.html" %}
+          {% include "iex-2023/counter.html" %}
+          {% include "iex-2023/about.html" %}
+          <!-- {% include "iex-2023/registration.html" %} --> <!-- rm at beginning of iEX 2023 -->
+          {% include "iex-2023/keynote-speakers.html" %}
+          {% include "iex-2023/breakout-tracks.html" %}
+          {% include "iex-2023/iex-talks.html" %}
         </main>
 
         {% include "footer.html" %}
@@ -54,10 +44,10 @@
     </div>
     <!-- SITE WRAPPER - END -->
 
-    <script src="assets-3-5/uswds/js/uswds.min.js"></script>
-    <script src="assets-3-5/js/vendors/lazy/jquery.lazy.min.js"></script>
-    <script src="assets-3-5/js/vendors/parallax-scroll/jquery.parallax-scroll.js"></script>
-    <script src="assets-3-5/js/functions.js"></script>
+    <script src="assets/uswds/js/uswds.min.js"></script>
+    <script src="assets/js/vendors/lazy/jquery.lazy.min.js"></script>
+    <script src="assets/js/vendors/counter/counter.min.js"></script>
+    <script src="assets/js/functions.js"></script>
 
   </body>
 </html>
