@@ -3,7 +3,7 @@
     font-style:normal;
     font-weight:300;
     font-display:fallback;
-    src:url(../../assets-3-5/uswds/fonts/source-sans-pro/sourcesanspro-light-webfont.woff)format("woff");
+    src:url(../../assets/uswds/fonts/source-sans-pro/sourcesanspro-light-webfont.woff)format("woff");
 }
 
 @font-face{
@@ -11,7 +11,7 @@
     font-style:normal;
     font-weight:400;
     font-display:fallback;
-    src:url(../../assets-3-5/uswds/fonts/source-sans-pro/sourcesanspro-regular-webfont.woff)format("woff");
+    src:url(../../assets/uswds/fonts/source-sans-pro/sourcesanspro-regular-webfont.woff)format("woff");
 }
 
 @font-face{
@@ -19,7 +19,7 @@
     font-style:normal;
     font-weight:700;
     font-display:fallback;
-    src:url(../../assets-3-5/uswds/fonts/source-sans-pro/sourcesanspro-bold-webfont.woff)format("woff");
+    src:url(../../assets/uswds/fonts/source-sans-pro/sourcesanspro-bold-webfont.woff)format("woff");
 }
 
 @font-face{
@@ -27,7 +27,7 @@
     font-style:italic;
     font-weight:300;
     font-display:fallback;
-    src:url(../../assets-3-5/uswds/fonts/source-sans-pro/sourcesanspro-lightitalic-webfont.woff)format("woff");
+    src:url(../../assets/uswds/fonts/source-sans-pro/sourcesanspro-lightitalic-webfont.woff)format("woff");
 }
 
 @font-face{
@@ -35,7 +35,7 @@
     font-style:italic;
     font-weight:400;
     font-display:fallback;
-    src:url(../../assets-3-5/uswds/fonts/source-sans-pro/sourcesanspro-italic-webfont.woff)format("woff");
+    src:url(../../assets/uswds/fonts/source-sans-pro/sourcesanspro-italic-webfont.woff)format("woff");
 }
 
 @font-face{
@@ -43,7 +43,7 @@
     font-style:italic;
     font-weight:700;
     font-display:fallback;
-    src:url(../../assets-3-5/uswds/fonts/source-sans-pro/sourcesanspro-bolditalic-webfont.woff)format("woff");
+    src:url(../../assets/uswds/fonts/source-sans-pro/sourcesanspro-bolditalic-webfont.woff)format("woff");
 }
 
 @font-face{
@@ -51,8 +51,8 @@
     font-style:normal;
     font-weight:300;
     font-display:fallback;
-    src:url(../../assets-3-5/uswds/fonts/myriad-pro/MyriadPro-Light.woff)format("woff"),
-        url(../../assets-3-5/uswds/fonts/myriad-pro/MyriadPro-Light.woff2)format("woff2");
+    src:url(../../assets/uswds/fonts/myriad-pro/MyriadPro-Light.woff)format("woff"),
+        url(../../assets/uswds/fonts/myriad-pro/MyriadPro-Light.woff2)format("woff2");
 }
 
 @font-face{
@@ -60,8 +60,8 @@
     font-style:normal;
     font-weight:400;
     font-display:fallback;
-    src:url(../../assets-3-5/uswds/fonts/myriad-pro/MyriadPro-Regular.woff)format("woff"),
-        url(../../assets-3-5/uswds/fonts/myriad-pro/MyriadPro-Regular.woff2)format("woff2");
+    src:url(../../assets/uswds/fonts/myriad-pro/MyriadPro-Regular.woff)format("woff"),
+        url(../../assets/uswds/fonts/myriad-pro/MyriadPro-Regular.woff2)format("woff2");
 }
 
 @font-face{
@@ -69,8 +69,8 @@
     font-style:normal;
     font-weight:700;
     font-display:fallback;
-    src:url(../../assets-3-5/uswds/fonts/myriad-pro/MyriadPro-Bold.woff)format("woff"),
-    url(../../assets-3-5/uswds/fonts/myriad-pro/MyriadPro-Bold.woff2)format("woff2");
+    src:url(../../assets/uswds/fonts/myriad-pro/MyriadPro-Bold.woff)format("woff"),
+    url(../../assets/uswds/fonts/myriad-pro/MyriadPro-Bold.woff2)format("woff2");
 }
 
 @font-face{
@@ -78,8 +78,8 @@
     font-style:italic;
     font-weight:300;
     font-display:fallback;
-    src:url(../../assets-3-5/uswds/fonts/myriad-pro/MyriadPro-LightIt.woff)format("woff"),
-        url(../../assets-3-5/uswds/fonts/myriad-pro/MyriadPro-LightIt.woff2)format("woff2");
+    src:url(../../assets/uswds/fonts/myriad-pro/MyriadPro-LightIt.woff)format("woff"),
+        url(../../assets/uswds/fonts/myriad-pro/MyriadPro-LightIt.woff2)format("woff2");
 }
 
 @font-face{
@@ -87,8 +87,8 @@
     font-style:italic;
     font-weight:400;
     font-display:fallback;
-    src:url(../../assets-3-5/uswds/fonts/myriad-pro/MyriadPro-It.woff)format("woff"),
-        url(../../assets-3-5/uswds/fonts/myriad-pro/MyriadPro-It.woff2)format("woff2");
+    src:url(../../assets/uswds/fonts/myriad-pro/MyriadPro-It.woff)format("woff"),
+        url(../../assets/uswds/fonts/myriad-pro/MyriadPro-It.woff2)format("woff2");
 }
 
 @font-face{
@@ -96,16 +96,16 @@
     font-style:italic;
     font-weight:700;
     font-display:fallback;
-    src:url(../../assets-3-5/uswds/fonts/myriad-pro/MyriadPro-BoldIt.woff)format("woff"),
-        url(../../assets-3-5/uswds/fonts/myriad-pro/MyriadPro-BoldIt.woff2)format("woff2");
+    src:url(../../assets/uswds/fonts/myriad-pro/MyriadPro-BoldIt.woff)format("woff"),
+        url(../../assets/uswds/fonts/myriad-pro/MyriadPro-BoldIt.woff2)format("woff2");
 }
 
 @font-face{
     font-family:"Myriad-Pro-Condensed";
     font-style:normal;
     font-weight:700;
-    src:url(../../assets-3-5/uswds/fonts/myriad-pro/myriad-pro-bold-condensed_pa4hra.woff)format("woff"),
-        url(../../assets-3-5/uswds/fonts/myriad-pro/myriad-pro-bold-condensed_c0wb3w.woff2)format("woff2");
+    src:url(../../assets/uswds/fonts/myriad-pro/myriad-pro-bold-condensed_pa4hra.woff)format("woff"),
+        url(../../assets/uswds/fonts/myriad-pro/myriad-pro-bold-condensed_c0wb3w.woff2)format("woff2");
 }
 
 body { font-family: "Myriad-Pro", Helvetica, arial, sans-serif; }
