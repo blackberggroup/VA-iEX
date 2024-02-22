@@ -29,11 +29,13 @@ in the form $setting: value,
   /* ----------------------------------------
   TYPOGRAPHY
   ---------------------------------------- */
-  $theme-font-path: "../../assets-3-5/uswds/fonts",
+  // $theme-font-path: "../../assets-3-5/uswds/fonts",
+  $theme-font-path: "../../assets/uswds/fonts",
   /* ----------------------------------------
   HEADER
   ---------------------------------------- */
-  $theme-image-path: "../../assets-3-5/uswds/img",
+  // $theme-image-path: "../../assets-3-5/uswds/img",
+  $theme-image-path: "../../assets/uswds/img",
   $theme-header-max-width: "widescreen",
   $theme-banner-max-width: "widescreen",
 
