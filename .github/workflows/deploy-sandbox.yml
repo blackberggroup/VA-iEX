@@ -21,14 +21,13 @@ jobs:
         password: ${{ secrets.ftp_password }}
         port: 21
         local-dir: ./_site/
-        server-dir: innovation.bgsandbox.com/ecosystem/views/programs/hil/views/iex-2023/
+        server-dir: innovation.bgsandbox.com/hil/views/iex-2023/
 
 
         exclude: |
           **/.DS_Store
           **/.git*
           **/.git*/**
-          **/_site/coming-soon/**
           **/node_modules/**
           **/assets/sass/**
           **/uswds/img/material-icons-deprecated/**
