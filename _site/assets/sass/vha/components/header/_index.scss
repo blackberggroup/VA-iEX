@@ -2,6 +2,11 @@
 
 .usa-header {
     background-color: #0e1d33;
+    background-color: none;
+}
+
+.usa-header + main {
+    border-top: none !important;
 }
 
 .usa-logo {
