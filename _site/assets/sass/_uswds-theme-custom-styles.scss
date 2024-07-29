@@ -57,3 +57,35 @@ i.e.
    background: red;
    background: #13181c;
  }
+
+ h3{
+  color: white;
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: 700;
+  font-family: Myriad Pro, sans-serif;
+  letter-spacing: -1px;
+  padding: 0;
+  margin: 0;
+ }
+ h3 span{
+  color: #00BDE3;
+ 
+ }
+ h4{
+  color: white;
+  margin: 0;
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 700;
+ }
+
+ a {
+  color: #00BDE3;
+ }
+ .header-box{
+  border-left: 1px solid #2E6276;
+ }
+ .header-box-r{
+  border-right: 1px solid #2E6276;
+ }
