@@ -83,9 +83,12 @@ i.e.
  a {
   color: #00BDE3;
  }
- .header-box{
-  border-left: 1px solid #2E6276;
+ .border-left-1px, .border-right-1px{
+  border-color:  #2E6276;
  }
- .header-box-r{
-  border-right: 1px solid #2E6276;
- }
+ @media (max-width: 878px) { /* Adjust the max-width to match mobile-lg breakpoint */
+  .mobile-lg-border-left-0 {
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+}
