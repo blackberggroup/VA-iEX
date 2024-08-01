@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             opacity: 1,    // End state: fully visible
             stagger: 0.05, // Stagger the animation by 0.05 seconds for each word
             scrollTrigger: {
-                trigger: "#breakout-tracks h2", // The element that triggers the animation
+                trigger: "#breakout-tracks h4", // The element that triggers the animation
                 start: "top bottom+=200",       // Start the animation when the top of the trigger element hits the bottom of the viewport
                 end: "top 80%",                 // End the animation when the top of the trigger element hits 80% of the viewport height
                 scrub: true,                    // Smoothly animate the progress based on the scroll position
