@@ -4,7 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.iex-hero').classList.remove('loading');
 
         // Initialize GSAP timeline
-        const tl = gsap.timeline();
+        const tl = gsap.timeline({
+            onComplete: function() {
+                // Add the event listeners once the timeline animation is complete
+                addInteractionListeners();
+            }
+        });
 
         tl.to('.x-logo', {duration: .3, scale:1, opacity: 1, ease: 'power4.out'});
         tl.to('.e-logo', {duration: .3, scale:1, opacity: 1, ease: 'power4.out'});
@@ -68,24 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 ease: 'power2.out' 
             });
     });
-
-    document.querySelector('#iex-hero').addEventListener('mouseenter', function(event) {
-        // Add the mousemove event listener when the mouse enters the element
-        document.addEventListener('mousemove', onMouseMove);
-    });
-    
-    document.querySelector('#iex-hero').addEventListener('mouseleave', function() {
-        // Remove the mousemove event listener when the mouse leaves the element
-        document.removeEventListener('mousemove', onMouseMove);
-    
-        // Reset the element's rotation when the mouse leaves
-        gsap.to('#iex-hero', {
-            duration: 0.6,
-            rotationY: 0,
-            rotationX: 0,
-            ease: 'power1.out'
-        });
-    });
     
     function onMouseMove(event) {
         var x = (event.clientX / window.innerWidth) - 0.5;
@@ -99,8 +86,24 @@ document.addEventListener('DOMContentLoaded', function() {
             transformPerspective: 300,
             transformOrigin: "center"
         });
+    }    
+
+    function addInteractionListeners() {
+        document.querySelector('#iex-hero').addEventListener('mouseenter', function(event) {
+            document.addEventListener('mousemove', onMouseMove);
+        });
+
+        document.querySelector('#iex-hero').addEventListener('mouseleave', function() {
+            document.removeEventListener('mousemove', onMouseMove);
+
+            // Reset the element's rotation when the mouse leaves
+            gsap.to('#iex-hero', {
+                duration: 0.6,
+                rotationY: 0,
+                rotationX: 0,
+                ease: 'power1.out'
+            });
+        });
     }
-    
-    
     
 });
