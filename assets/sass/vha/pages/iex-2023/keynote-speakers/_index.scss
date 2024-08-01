@@ -1,3 +1,39 @@
 .iex-keynote-speakers {
     background-image: url('../../assets/img/iex-2023/keynote-speakers-bg.png');
+
+    .keynote-speaker {
+        img {
+            // border-radius: 8px;
+            border: 3px solid #11181D;
+            // background: url(<path-to-image>) lightgray -200.15px -103.835px / 248.496% 132.448% no-repeat;
+            box-shadow: 0px 0px 0px 2px #00BDE3;
+        }
+    }
+
+    .usa-accordion {
+        h4 {
+            text-align: center !important;
+        }
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    .usa-accordion__button {
+        color: #fff;
+        width: 210px;
+        border-radius: 4px;
+        background: var(--Info-info, #00BDE3);
+        background-image: none !important;
+        margin: 0 8px !important;
+        padding: 12px 20px !important;
+        text-align: center !important;
+    }
+
+    .usa-accordion__content {
+        color: #fff !important;
+        background-color: inherit !important;
+        padding: 0 !important;
+    }
+
 }
