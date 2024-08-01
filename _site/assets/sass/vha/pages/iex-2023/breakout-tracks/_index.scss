@@ -1,38 +1,47 @@
 @use "uswds-core" as *;
 
-.iex-breakout-tracks {
-    background-color: #{color("base-lightest")};
-    margin-bottom: -160px;
+// .iex-breakout-tracks {
+//     background-color: #{color("base-lightest")};
+//     margin-bottom: -160px;
 
-    &__card {
-        position: relative;
-        z-index: 30;
-    }
+//     &__card {
+//         position: relative;
+//         z-index: 30;
+//     }
 
-    &__card-description-col {
+//     &__card-description-col {
 
-        p {
-            margin-top: 0;
+//         p {
+//             margin-top: 0;
 
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
+//             &:last-child {
+//                 margin-bottom: 0;
+//             }
+//         }
 
-        &:after {
+//         &:after {
 
-            @include at-media(tablet-lg) {
-                content: '';
-                height: 100%;
-                background-color: #DFE1E2;
-                width: 1px;
-                position: absolute;
-                top: 0;
-                left: -16px;
-            }
+//             @include at-media(tablet-lg) {
+//                 content: '';
+//                 height: 100%;
+//                 background-color: #DFE1E2;
+//                 width: 1px;
+//                 position: absolute;
+//                 top: 0;
+//                 left: -16px;
+//             }
         
+//         }
+
+//     }
+
+// }
+
+.iex-breakout-tracks {
+
+    .breakout-tracks-topics {
+        .topic {
+            border: 1px solid #00bde3;
         }
-
     }
-
 }
