@@ -24,6 +24,21 @@
 
 }
 
+.button-vha--white {
+    background-color: #fff !important;
+    color: #{color("base-darkest")} !important;
+
+    &:visited {
+        color: #{color("base-darkest")} !important;
+    }
+
+    &:hover {
+        background-color: #fff !important;
+        color: #{color("base-darkest")} !important;
+    }
+
+}
+
 .button-vha--teal {
     background-color: #009485;
     color: #fff;
