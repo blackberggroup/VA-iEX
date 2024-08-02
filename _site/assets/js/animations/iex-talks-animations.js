@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Create a GSAP animation for image1
     gsap.to(image1, {
-        y: 40,               // Move the image up by 100 pixels
-        ease: "none",          // No easing, linear animation
+        y: -75,               // Move the image up by 100 pixels
+        ease: "Power1.easeOut",          // No easing, linear animation
         scrollTrigger: {
             trigger: ".iex-talks__image", // The element that triggers the animation
             start: "top 100%",  // Start the animation when the top of the trigger element reaches 90% of the viewport height
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Create a GSAP animation for image2
     gsap.to(image2, {
-        y: -60,               // Move the image up by 150 pixels
-        ease: "none",          // No easing, linear animation
+        y: -100,               // Move the image up by 150 pixels
+        ease: "Power1.easeOut",          // No easing, linear animation
         scrollTrigger: {
             trigger: ".iex-talks__image", // The element that triggers the animation
             start: "top 100%",  // Start the animation when the top of the trigger element reaches 80% of the viewport height

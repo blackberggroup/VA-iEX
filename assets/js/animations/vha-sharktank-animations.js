@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Create a GSAP animation for image1
     gsap.to(image1, {
-        y: 40,               // Move the image up by 100 pixels
+        y: -75,               // Move the image up by 100 pixels
         ease: "none",          // No easing, linear animation
         scrollTrigger: {
             trigger: ".iex-shark__image", // The element that triggers the animation
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Create a GSAP animation for image2
     gsap.to(image2, {
-        y: -60,               // Move the image up by 150 pixels
+        y: -100,               // Move the image up by 150 pixels
         ease: "none",          // No easing, linear animation
         scrollTrigger: {
             trigger: ".iex-shark__image", // The element that triggers the animation
