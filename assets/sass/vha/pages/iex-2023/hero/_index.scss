@@ -1,3 +1,5 @@
+@use "uswds-core" as *;
+
 .iex-hero {
 
     transition: all 0.1s ease;
@@ -17,12 +19,12 @@
                 position: relative;
                 width: 90px;
         
-                @media(min-width: 350px){width: 110px;}
-                @media(min-width: 480px){width: 150px;}
-                @media(min-width: 640px){width: 190px;}
-                @media(min-width: 800px){width: 250px;}
-                @media(min-width: 1024px){width: 350px;}
-                @media(min-width: 1200px){width: 416px;}
+                @include at-media(mobile) {width: 110px;}
+                @include at-media(mobile-lg) {width: 150px;}
+                @include at-media(tablet) {width: 190px;}
+                @include at-media(tablet-lg){width: 250px;}
+                @include at-media(desktop){width: 350px;}
+                @include at-media(desktop-lg) {width: 416px;}
             }
             .i-logo {
                 transform-origin: bottom center;
@@ -31,15 +33,15 @@
                 position: absolute;
                 z-index: 9999;
                 width: 5px;
-                margin-left: -12%;
+                margin-left: -11px;
                 margin-top: 9%;
 
-                @media(min-width: 350px){width: 7px;}
-                @media(min-width: 480px){width: 8px; margin-left: -12%; margin-top: 9%;}
-                @media(min-width: 640px){width: 12px; margin-left: -11%; margin-top: 4%;}
-                @media(min-width: 800px){width: 14px;}
-                @media(min-width: 1024px){width: 22px;}
-                @media(min-width: 1200px){width: auto;}
+                @include at-media(mobile){width: 7px; margin-left: -13px;}
+                @include at-media(mobile-lg){width: 8px; margin-left: -19px; margin-top: 9%;}
+                @include at-media(tablet){width: 12px; margin-left: -23px; margin-top: 4%;}
+                @include at-media(tablet-lg){width: 14px; margin-left: -26px;}
+                @include at-media(desktop){width: 22px; margin-left: -41px;}
+                @include at-media(desktop-lg){width: auto; margin-left: -52px;}
             }
             .e-logo {
                 transform-origin: center;
@@ -50,47 +52,67 @@
                 margin-top: -7%;
                 width: 19px;
 
-                @media(min-width: 350px){width: 23px;}
-                @media(min-width: 480px){width: 32px;}
-                @media(min-width: 640px){width: 38px;}
-                @media(min-width: 800px){width: 45px;}
-                @media(min-width: 1024px){width: 70px;}
-                @media(min-width: 1200px){width: auto;}
+                @include at-media(mobile){width: 23px;}
+                @include at-media(mobile-lg){width: 32px;}
+                @include at-media(tablet){width: 38px;}
+                @include at-media(tablet-lg){width: 45px;}
+                @include at-media(desktop){width: 70px;}
+                @include at-media(desktop-lg){width: auto;}
             }
         }
 
         .chevrons {
 
             img {
-                height: 84px;
+                height: 69px;
                 position: absolute;
-                top: 0;
+                top: 50%;
                 opacity: 0;
-                transform: translateX(-50px);
+                transform: translate(-50px, -50%);
     
                 &.image-right {
-                    transform: translateX(50px);
+                    transform: translate(50px, -50%);
                 }
     
-                @media(min-width: 350px){height: 103px;}
-                @media(min-width: 480px){height: 141px;}
-                @media(min-width: 640px){height: 179px;}
-                @media(min-width: 800px){height: 235px;}
-                @media(min-width: 1024px){height: 329px;}
-                @media(min-width: 1200px){height: 392px;}
-            }
-
-                #left-chevron-1 { left: -24%; }
-                #left-chevron-2 { left: -51%; }
-                #left-chevron-3 { left: -78%; }
-                #left-chevron-4 { left: -106%; }
-                #left-chevron-5 { left: -106%; }
+                @include at-media(mobile){height: 87px;}
+                @include at-media(mobile-lg){height: 114px;}
+                @include at-media(tablet){height: 150px;}
+                @include at-media(tablet-lg){height: 198px;}
+                @include at-media(desktop){height: 277px;}
+                @include at-media(desktop-lg){height: 332px;}
+            }             
                 
                 #right-chevron-1 { right: -24%;}
                 #right-chevron-2 { right: -51%; }
                 #right-chevron-3 { right: -78%; }
-                #right-chevron-4 { right: -106%; }
-                #right-chevron-5 { right: -106%; }
+                #right-chevron-4 { right: -89%; }
+                #right-chevron-5 { 
+                    right: -89%; 
+                    height:40px;
+
+                    @include at-media(mobile){height: 66px;}
+                    @include at-media(mobile-lg){height: 49px;}
+                    @include at-media(tablet){height: 64px;}
+                    @include at-media(tablet-lg){height: 86px;}
+                    @include at-media(desktop){height: 126px;}
+                    @include at-media(desktop-lg){height: 150px;}      
+                }
+
+                #left-chevron-1 { left: -24%; }
+                #left-chevron-2 { left: -51%; }
+                #left-chevron-3 { left: -78%; }
+                #left-chevron-4 { left: -89%; }
+                #left-chevron-5 { 
+                    left: -89%; height:166px;
+                    height:40px;
+
+                    @include at-media(mobile){height: 66px;}
+                    @include at-media(mobile-lg){height: 49px;}
+                    @include at-media(tablet){height: 64px;}
+                    @include at-media(tablet-lg){height: 86px;}
+                    @include at-media(desktop){height: 126px;}
+                    @include at-media(desktop-lg){height: 150px;}      
+                }
           }
 
         .bar-gradient {
@@ -100,11 +122,11 @@
             position: absolute;
             transform: scaleX(0);
     
-            @media(min-width: 480px){ height: 6px; }
-            @media(min-width: 640px){ height: 8px; }
-            @media(min-width: 800px){ height: 10px; }
-            @media(min-width: 1024px){ height: 14px; }
-            @media(min-width: 1200px){ height: 17px; }
+            @include at-media(mobile-lg){ height: 6px; }
+            @include at-media(tablet){ height: 8px; }
+            @include at-media(tablet-lg){ height: 10px; }
+            @include at-media(desktop){ height: 14px; }
+            @include at-media(desktop-lg){ height: 17px; }
     
             &.bar-left-top {
                 top: 0;
@@ -115,33 +137,33 @@
                 width: 88px;
                 transform-origin: left center;
     
-                @media(min-width: 350px){ 
+                @include at-media(mobile){ 
                     transform: translateX(-98px) scaleX(0);
                     width: 100px;
                 }
     
-                @media(min-width: 480px){ 
+                @include at-media(mobile-lg){ 
                     transform: translateX(-136px) scaleX(0);
                     width: 140px;
                 }
         
-                @media(min-width: 640px){ 
+                @include at-media(tablet){ 
                     transform: translateX(-174px) scaleX(0);
                     width: 181px;
                 }
             
-                @media(min-width: 800px){ 
+                @include at-media(tablet-lg){ 
                     transform: translateX(-226px) scaleX(0);
                     width: 235px;
                 }
             
-                @media(min-width: 1024px){ 
+                @include at-media(desktop){ 
                     clip-path: polygon(0 0, 97% 0, 100% 100%, 0 100%);
                     transform: translateX(-311px) scaleX(0);
                     width: 325px;
                 }
             
-                @media(min-width: 1200px){ 
+                @include at-media(desktop-lg){ 
                     clip-path: polygon(0 0, 97% 0, 100% 100%, 0 100%);
                     width: 391px;
                     transform: translateX(-373px) scaleX(0);
@@ -158,33 +180,33 @@
                 width: 78px;
                 transform-origin: left center;
     
-                @media(min-width: 350px){ 
+                @include at-media(mobile){ 
                     transform: translateX(-98px) scaleX(0);
                     width: 95px;
                 }
     
-                @media(min-width: 480px){ 
+                @include at-media(mobile-lg){ 
                     transform: translateX(-134px) scaleX(0);
                     width: 130px;
                 }
         
-                @media(min-width: 640px){ 
+                @include at-media(tablet){ 
                     transform: translateX(-174px) scaleX(0);
                     width: 170px;
                 }
             
-                @media(min-width: 800px){ 
+                @include at-media(tablet-lg){ 
                     transform: translateX(-225px) scaleX(0);
                     width: 220px;
                 }
             
-                @media(min-width: 1024px){ 
+                @include at-media(desktop){ 
     
                     transform: translateX(-311px) scaleX(0);
                     width: 305px;
                 }
             
-                @media(min-width: 1200px){ 
+                @include at-media(desktop-lg){ 
                     transform: translateX(-373px) scaleX(0);
                     width: 367px;
                 }
@@ -199,33 +221,33 @@
                 width: 88px;
                 transform-origin: right center;
     
-                @media(min-width: 350px){ 
+                @include at-media(mobile){ 
                     transform: translateX(98px) scaleX(0);
                     width: 100px;
                 }
     
-                @media(min-width: 480px){ 
+                @include at-media(mobile-lg){ 
                     transform: translateX(136px) scaleX(0);
                     width: 140px;
                 }
         
-                @media(min-width: 640px){ 
+                @include at-media(tablet){ 
                     transform: translateX(174px) scaleX(0);
                     width: 181px;
                 }
             
-                @media(min-width: 800px){ 
+                @include at-media(tablet-lg){ 
                     transform: translateX(226px) scaleX(0);
                     width: 235px;
                 }
             
-                @media(min-width: 1024px){ 
+                @include at-media(desktop){ 
                     clip-path: polygon(3% 0%,100%0,100% 100%,0 100%);
                     transform: translateX(311px) scaleX(0);
                     width: 325px;
                 }
             
-                @media(min-width: 1200px){ 
+                @include at-media(desktop-lg){ 
                     clip-path: polygon(3% 0%,100%0,100% 100%,0 100%);
                     width: 391px;
                     transform: translateX(373px) scaleX(0);
@@ -242,33 +264,33 @@
                 width: 78px;
                 transform-origin: right center;
     
-                @media(min-width: 350px){ 
+                @include at-media(mobile){ 
                     transform: translateX(98px) scaleX(0);
                     width: 95px;
                 }
     
-                @media(min-width: 480px){ 
+                @include at-media(mobile-lg){ 
                     transform: translateX(134px) scaleX(0);
                     width: 130px;
                 }
         
-                @media(min-width: 640px){ 
+                @include at-media(tablet){ 
                     transform: translateX(174px) scaleX(0);
                     width: 170px;
                 }
             
-                @media(min-width: 800px){ 
+                @include at-media(tablet-lg){ 
                     transform: translateX(225px) scaleX(0);
                     width: 220px;
                 }
             
-                @media(min-width: 1024px){ 
+                @include at-media(desktop){ 
     
                     transform: translateX(311px) scaleX(0);
                     width: 305px;
                 }
             
-                @media(min-width: 1200px){ 
+                @include at-media(desktop-lg){ 
                     transform: translateX(373px) scaleX(0);
                     width: 367px;
                 }
@@ -289,11 +311,11 @@
         word-spacing: 1px;
         line-height: 1;
 
-        @media(min-width: 480px){font-size: 20px; letter-spacing: 4px;}
-        @media(min-width: 640px){font-size: 26px;}
-        @media(min-width: 800px){font-size: 26px; letter-spacing: 9px;}
-        @media(min-width: 1024px){font-size: 36px; letter-spacing: 12px;}
-        @media(min-width: 1200px){font-size: 36px; letter-spacing: 18px; word-spacing: 5px;}
+        @include at-media(mobile-lg){font-size: 20px; letter-spacing: 4px;}
+        @include at-media(tablet){font-size: 26px;}
+        @include at-media(tablet-lg){font-size: 26px; letter-spacing: 9px;}
+        @include at-media(desktop){font-size: 36px; letter-spacing: 12px;}
+        @include at-media(desktop-lg){font-size: 36px; letter-spacing: 18px; word-spacing: 5px;}
     }
 
     h2 {
@@ -301,10 +323,10 @@
         letter-spacing: 3px;
         line-height: 1;
 
-        @media(min-width: 480px){font-size: 22px;}
-        @media(min-width: 640px){font-size: 28px; letter-spacing: 4px;}
-        @media(min-width: 800px){font-size: 39px; letter-spacing: 4px;}
-        @media(min-width: 1024px){font-size: 53px; letter-spacing: 5px; word-spacing: 5px;}
-        @media(min-width: 1200px){font-size: 70px; letter-spacing: 3px; word-spacing: 5px;}
+        @include at-media(mobile-lg){font-size: 22px;}
+        @include at-media(tablet){font-size: 28px; letter-spacing: 4px;}
+        @include at-media(tablet-lg){font-size: 39px; letter-spacing: 4px;}
+        @include at-media(desktop){font-size: 53px; letter-spacing: 5px; word-spacing: 5px;}
+        @include at-media(desktop-lg){font-size: 70px; letter-spacing: 3px; word-spacing: 5px;}
     }
 }

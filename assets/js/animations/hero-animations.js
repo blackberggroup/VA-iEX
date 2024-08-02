@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }    
 
     function addInteractionListeners() {
+
         document.querySelector('#iex-hero').addEventListener('mouseenter', function(event) {
             document.addEventListener('mousemove', onMouseMove);
         });
@@ -105,5 +106,38 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-    
+
+       // Function to hide, reset, and reanimate all elements on window resize
+       function hideResetReanimate() {
+            // Hide and reset all elements immediately
+            gsap.set('.bar-left-top', {
+                x: '-96%', // Reset position for images
+            });
+            gsap.set('.bar-left-bottom', {
+                x: '-100%', // Reset position for images
+            });
+            gsap.set('.bar-right-top', {
+                x: '96%', // Reset position for images
+            });
+            gsap.set('.bar-right-bottom', {
+                x: '100%', // Reset position for bars
+            });
+        }
+
+    // Debounce function to delay execution until after resize ends
+    function debounce(func, wait) {
+        let timeout;
+        return function() {
+            clearTimeout(timeout);
+            timeout = setTimeout(func, wait);
+        };
+    }
+
+    // Handle window resize with debounce
+    const handleResize = debounce(function() {
+        hideResetReanimate();
+    }, 100); // 250ms delay after resize ends
+
+    window.addEventListener('resize', handleResize);
+
 });
