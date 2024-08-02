@@ -323,10 +323,10 @@
         letter-spacing: 3px;
         line-height: 1;
 
-        @include at-media(mobile-lg){font-size: 22px;}
-        @include at-media(tablet){font-size: 28px; letter-spacing: 4px;}
-        @include at-media(tablet-lg){font-size: 39px; letter-spacing: 4px;}
-        @include at-media(desktop){font-size: 53px; letter-spacing: 5px; word-spacing: 5px;}
-        @include at-media(desktop-lg){font-size: 70px; letter-spacing: 3px; word-spacing: 5px;}
+        @include at-media(mobile-lg){font-size: 33px;}
+        @include at-media(tablet){font-size: 39px; letter-spacing: 4px;}
+        @include at-media(tablet-lg){font-size: 53px; letter-spacing: 4px;}
+        @include at-media(desktop){font-size: 73px; letter-spacing: 5px; word-spacing: 5px;}
+        @include at-media(desktop-lg){font-size: 96px; letter-spacing: 3px; word-spacing: 5px;}
     }
 }
