@@ -24,6 +24,14 @@
         .usa-button {
             background: #00bde3;
             color: #1b1b1b;
+
+            .ripples {
+                background-color: transparent;
+                border-radius: 50%;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                display: block;
+            }
         }
         
     }

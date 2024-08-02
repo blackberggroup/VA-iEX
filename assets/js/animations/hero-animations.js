@@ -140,4 +140,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('resize', handleResize);
 
+    document.querySelector('.button-animate').addEventListener('mouseenter', function(e) {
+        gsap.fromTo('.ripples', {
+          border: '2px solid #fff',
+          left: e.offsetX,
+          top: e.offsetY,
+          height: 0,
+          width: 0,
+          opacity: 1,
+        }, {
+          border: '0px solid #fff',
+          height: 60,
+          width: 60,
+          opacity: 0,
+          duration: 1,
+          ease: "power2.out"
+        })
+    })
+
 });

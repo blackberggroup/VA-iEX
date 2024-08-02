@@ -53,4 +53,17 @@ document.addEventListener('DOMContentLoaded', function() {
         once: true                   // Ensure it only happens once
     });
 
+    // Create a GSAP animation for image2
+    gsap.to(".parallax-content img", {
+        y: 100,               // Move the image up by 150 pixels
+        ease: "none",          // No easing, linear animation
+        scrollTrigger: {
+            trigger: ".parallax-content", // The element that triggers the animation
+            start: "top 65%",  // Start the animation when the top of the trigger element reaches 80% of the viewport height
+            end: "bottom top+=200", // End the animation when the bottom of the trigger element reaches the top of the viewport
+            scrub: true,       // Smoothly animate the progress based on the scroll position
+            //markers: true      // Show markers for the start and end positions (useful for debugging)
+        }
+    });
+
 });
