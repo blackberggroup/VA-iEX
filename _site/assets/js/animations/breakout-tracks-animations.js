@@ -1,5 +1,5 @@
 // Wait for the DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {    
 
     // Initialize Splitting.js to split text into individual words or characters
     Splitting();

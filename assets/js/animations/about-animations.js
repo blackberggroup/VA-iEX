@@ -27,6 +27,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    gsap.from("#iex-about-grid-row h3", {
+        y: '110%',
+        opacity: 0,
+        rotationZ: '10',
+        duration: 0.5,
+        ease: 'power1.out',
+        scrollTrigger: {
+            trigger: "#iex-about-grid-row", // The element that triggers the animation
+            start: "top bottom",  // Start the animation when the top of the trigger element reaches 80% of the viewport height
+            end: "+=100", // End the animation when the bottom of the trigger element reaches the top of the viewport
+            scrub: false,       // Smoothly animate the progress based on the scroll position
+            //markers: true      // Show markers for the start and end positions (useful for debugging)
+        }
+    });
+      
     // Initialize Splitting.js to split text into individual words or characters
     Splitting();
 

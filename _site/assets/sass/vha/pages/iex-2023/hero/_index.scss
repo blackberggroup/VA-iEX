@@ -2,6 +2,7 @@
 
 .iex-hero {
     background: url("/assets/img/hero/iex-bg-pattern.svg") no-repeat 0;
+    background-size: cover;
     transition: all 0.1s ease;
 
     &.loading {
@@ -298,35 +299,38 @@
         }
     }
 
-    h1,  h2 {
-        margin: 0;
-        opacity: 0;
-        transform: translateY(15px);
+    .headlines {
+        h1,  h2 {
+            margin: 0;
+            opacity: 0;
+            transform: translateY(15px);
+        }
+    
+        h1 {
+            font-weight: 300;
+            font-size: 16px;
+            letter-spacing: 2px;
+            word-spacing: 1px;
+            line-height: 1;
+    
+            @include at-media(mobile-lg){font-size: 20px; letter-spacing: 4px;}
+            @include at-media(tablet){font-size: 26px;}
+            @include at-media(tablet-lg){font-size: 26px; letter-spacing: 9px;}
+            @include at-media(desktop){font-size: 36px; letter-spacing: 12px;}
+            @include at-media(desktop-lg){font-size: 36px; letter-spacing: 18px; word-spacing: 5px;}
+        }
+    
+        h2 {
+            font-size: 16px;
+            letter-spacing: 3px;
+            line-height: 1;
+    
+            @include at-media(mobile-lg){font-size: 33px;}
+            @include at-media(tablet){font-size: 39px; letter-spacing: 4px;}
+            @include at-media(tablet-lg){font-size: 53px; letter-spacing: 4px;}
+            @include at-media(desktop){font-size: 73px; letter-spacing: 5px; word-spacing: 5px;}
+            @include at-media(desktop-lg){font-size: 96px; letter-spacing: 3px; word-spacing: 5px;}
+        }
     }
 
-    h1 {
-        font-weight: 300;
-        font-size: 16px;
-        letter-spacing: 2px;
-        word-spacing: 1px;
-        line-height: 1;
-
-        @include at-media(mobile-lg){font-size: 20px; letter-spacing: 4px;}
-        @include at-media(tablet){font-size: 26px;}
-        @include at-media(tablet-lg){font-size: 26px; letter-spacing: 9px;}
-        @include at-media(desktop){font-size: 36px; letter-spacing: 12px;}
-        @include at-media(desktop-lg){font-size: 36px; letter-spacing: 18px; word-spacing: 5px;}
-    }
-
-    h2 {
-        font-size: 16px;
-        letter-spacing: 3px;
-        line-height: 1;
-
-        @include at-media(mobile-lg){font-size: 33px;}
-        @include at-media(tablet){font-size: 39px; letter-spacing: 4px;}
-        @include at-media(tablet-lg){font-size: 53px; letter-spacing: 4px;}
-        @include at-media(desktop){font-size: 73px; letter-spacing: 5px; word-spacing: 5px;}
-        @include at-media(desktop-lg){font-size: 96px; letter-spacing: 3px; word-spacing: 5px;}
-    }
 }
