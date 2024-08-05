@@ -33,7 +33,7 @@ h3, .h3 {
         line-height: 1;
     }
     @include at-media(desktop-lg) {
-        font-size: 84px;
+        font-size: 100px;
         line-height: 90px;
     }
 }

@@ -43,7 +43,7 @@
     background-color: #009485;
     color: #fff;
 
-    &:visited, {
+    &:visited {
         color: #fff;
     }
 
@@ -52,4 +52,30 @@
         color: #fff;
     }
 
+}
+
+.usa-button {
+
+    &__vha-2024 {
+        background: #00bde3;
+        color: #1b1b1b;
+        padding: 12px 20px;
+    
+        .ripples {
+            background-color: transparent;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            display: block;
+        }
+
+        &:hover {
+            background: #00bde3;
+            color: #1b1b1b; 
+        }
+
+        &:visited {
+            color: #1b1b1b;
+        }
+    }
 }

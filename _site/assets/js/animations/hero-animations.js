@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('resize', handleResize);
 
-    document.querySelector('.button-animate').addEventListener('mouseenter', function(e) {
-        gsap.fromTo('.ripples', {
+    document.querySelector('.button-register').addEventListener('mouseenter', function(e) {
+        gsap.fromTo('.button-register .ripples', {
           border: '2px solid #fff',
           left: e.offsetX,
           top: e.offsetY,

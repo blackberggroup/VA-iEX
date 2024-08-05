@@ -35,11 +35,11 @@
     color: #fff;
 
     &:hover {
-        color: #FEE685;
+        color: #00bde3;
     }
 
     &:focus {
-        outline: 0.25rem solid #face00;
+        outline: 0.25rem solid #00bde3;
     }
 }
 
@@ -67,7 +67,7 @@
         color: #fff;
 
         &:hover {
-            color: #FEE685;
+            color: #00bde3;
         }
     }
 
@@ -81,7 +81,7 @@
 
     .usa-header--extended .usa-nav__primary-item>.usa-current::after, 
     .usa-header--extended .usa-nav__primary-item>.usa-nav__link:hover::after {
-        background-color: #FEE685;   
+        background-color: #00bde3;   
     }
 
     .usa-nav__submenu .usa-nav__submenu-item a {
@@ -96,7 +96,7 @@
         color: #fff;
 
         &:hover {
-            color: #FEE685;
+            color: #00bde3;
         }
     }        
 
