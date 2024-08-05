@@ -5,19 +5,21 @@ document.addEventListener('DOMContentLoaded', function() {
     Splitting();
 
     // Select all elements with the class "word"
-    const words = document.querySelectorAll(".word");
+    const words = document.querySelectorAll("#breakout-tracks .word");
 
-    // Create a timeline for the words animation tied to scroll
-    const wordsTimeline = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#breakout-tracks-row", // The element that triggers the animation
-            start: "top bottom",       // Start the animation when the top of the trigger element hits the bottom of the viewport
-            end: "top 50%",                 // End the animation when the top of the trigger element hits 80% of the viewport height
-            scrub: true,                    // Scrub only the word animation based on scroll position
-            //markers: true,                // Show markers for the start and end positions (useful for debugging)
-            once: true                      // Ensure the animation runs only once and does not reverse on scroll back
-        }
-    });
+// Create a timeline for the words animation tied to scroll
+const wordsTimeline = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#breakout-tracks-row h4", // The element that triggers the animation
+        start: "top 100%",       // Start the animation when the top of the element is 66% down from the top of the viewport
+        end: "bottom 50%",         // End the animation when the top of the element is 50% down from the top of the viewport
+        scrub: true,            // Scrub the animation based on scroll position
+        markers: true,          // Show markers for debugging (remove in production)
+        once: true,              // Ensure the animation runs only once
+        invalidateOnRefresh: true, // Recalculate start and end positions on refresh and resize
+        onRefresh: () => console.log('ScrollTrigger refreshed!') // Optional: for debugging refresh behavior
+    }
+});
 
     // Animate the words (scrubbed by scroll)
     wordsTimeline.fromTo(words, 
