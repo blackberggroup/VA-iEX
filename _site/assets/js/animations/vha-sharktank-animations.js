@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         scrollTrigger: {
             trigger: "#iex-shark-tank-grid-row", // The element that triggers the animation
             start: "top 100%",  // Start the animation when the top of the trigger element reaches 90% of the viewport height
-            end: "bottom top", // End the animation when the bottom of the trigger element reaches the top of the viewport
+            end: "1000px", // End the animation when the bottom of the trigger element reaches the top of the viewport
             scrub: true,       // Smoothly animate the progress based on the scroll position
             //markers: true      // Show markers for the start and end positions (useful for debugging)
         }
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         scrollTrigger: {
             trigger: "#iex-shark-tank-grid-row", // The element that triggers the animation
             start: "top 100%",  // Start the animation when the top of the trigger element reaches 80% of the viewport height
-            end: "bottom top", // End the animation when the bottom of the trigger element reaches the top of the viewport
+            end: "1000px", // End the animation when the bottom of the trigger element reaches the top of the viewport
             scrub: true,       // Smoothly animate the progress based on the scroll position
             //markers: true      // Show markers for the start and end positions (useful for debugging)
         }

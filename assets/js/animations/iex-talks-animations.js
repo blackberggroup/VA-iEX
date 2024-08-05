@@ -16,30 +16,29 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-
-    // Create a GSAP animation for image1
-    gsap.to('#talks-image-1', {
-        y: 75,               // Move the image up by 100 pixels
-        ease: "Power1.easeOut",          // No easing, linear animation
-        scrollTrigger: {
-            trigger: "#iex-talks-grid-row", // The element that triggers the animation
-            start: "top 40%",  // Start the animation when the top of the trigger element reaches 90% of the viewport height
-            end: "bottom top", // End the animation when the bottom of the trigger element reaches the top of the viewport
-            scrub: true,       // Smoothly animate the progress based on the scroll position
-            //markers: true      // Show markers for the start and end positions (useful for debugging)
-        }
-    });
-
-    // Create a GSAP animation for image2
-    gsap.to('#talks-image-2', {
-        y: 100,               // Move the image up by 150 pixels
-        ease: "Power1.easeOut",          // No easing, linear animation
-        scrollTrigger: {
-            trigger: "#iex-talks-grid-row", // The element that triggers the animation
-            start: "top 50%",  // Start the animation when the top of the trigger element reaches 80% of the viewport height
-            end: "bottom top", // End the animation when the bottom of the trigger element reaches the top of the viewport
-            scrub: true,       // Smoothly animate the progress based on the scroll position
-            //markers: true      // Show markers for the start and end positions (useful for debugging)
-        }
-    });
+        // Create a GSAP animation for image1
+        gsap.to("#talks-image-1", {
+            y: 100,               // Move the image up by 100 pixels
+            ease: "none",          // No easing, linear animation
+            scrollTrigger: {
+                trigger: ".iex-talks__image", // The element that triggers the animation
+                start: "top 90%",  // Start the animation when the top of the trigger element reaches 90% of the viewport height
+                end: "1000px", // End the animation when the bottom of the trigger element reaches the top of the viewport
+                scrub: true,       // Smoothly animate the progress based on the scroll position
+                //markers: true      // Show markers for the start and end positions (useful for debugging)
+            }
+        });
+    
+        // Create a GSAP animation for image2
+        gsap.to("#talks-image-2", {
+            y: 75,               // Move the image up by 150 pixels
+            ease: "none",          // No easing, linear animation
+            scrollTrigger: {
+                trigger: ".iex-talks__image", // The element that triggers the animation
+                start: "top 90%",  // Start the animation when the top of the trigger element reaches 80% of the viewport height
+                end: "1000px", // End the animation when the bottom of the trigger element reaches the top of the viewport
+                scrub: true,       // Smoothly animate the progress based on the scroll position
+                //markers: true      // Show markers for the start and end positions (useful for debugging)
+            }
+        });
 });
