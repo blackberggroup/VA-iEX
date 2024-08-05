@@ -48,3 +48,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+function toggleButtonText() {
+    var button = document.getElementById('toggleButton');
+    if (button.innerText === "View All Speakers") {
+        button.innerText = "See Less Speakers";
+    } else {
+        button.innerText = "View All Speakers";
+    }
+}
