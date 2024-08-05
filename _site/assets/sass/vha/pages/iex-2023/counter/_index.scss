@@ -23,6 +23,10 @@
             @include at-media(desktop) {
                 font-size: 22px;
             }
+
+            a {
+                color: #00bde3;
+            }
         }
 
         a {

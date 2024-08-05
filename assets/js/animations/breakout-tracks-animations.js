@@ -11,13 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
 const wordsTimeline = gsap.timeline({
     scrollTrigger: {
         trigger: "#breakout-tracks-row h4", // The element that triggers the animation
-        start: "top 100%",       // Start the animation when the top of the element is 66% down from the top of the viewport
-        end: "bottom 50%",         // End the animation when the top of the element is 50% down from the top of the viewport
+        start: "top 5%",       // Start the animation when the top of the element is 66% down from the top of the viewport
+        end: "+=300",         // End the animation when the top of the element is 50% down from the top of the viewport
         scrub: true,            // Scrub the animation based on scroll position
-        markers: true,          // Show markers for debugging (remove in production)
+       // markers: true,          // Show markers for debugging (remove in production)
         once: true,              // Ensure the animation runs only once
-        invalidateOnRefresh: true, // Recalculate start and end positions on refresh and resize
-        onRefresh: () => console.log('ScrollTrigger refreshed!') // Optional: for debugging refresh behavior
     }
 });
 
@@ -49,8 +47,8 @@ const wordsTimeline = gsap.timeline({
 
     // Trigger the topics animation after the words animation completes
     ScrollTrigger.create({
-        trigger: "#breakout-tracks-row",
-        start: "top 80%",           // Adjust the start point as needed
+        trigger: "#breakout-tracks-row h4",
+        start: "top 5%",           // Adjust the start point as needed
         onEnter: () => topicsTimeline.play(), // Play the topics animation when the words animation completes
         once: true                   // Ensure it only happens once
     });
@@ -60,9 +58,9 @@ const wordsTimeline = gsap.timeline({
         y: 100,               // Move the image up by 150 pixels
         ease: "none",          // No easing, linear animation
         scrollTrigger: {
-            trigger: ".parallax-content", // The element that triggers the animation
+            trigger: "#breakout-tracks-row", // The element that triggers the animation
             start: "top 65%",  // Start the animation when the top of the trigger element reaches 80% of the viewport height
-            end: "bottom top+=200", // End the animation when the bottom of the trigger element reaches the top of the viewport
+            end: "bottom top-=400", // End the animation when the bottom of the trigger element reaches the top of the viewport
             scrub: true,       // Smoothly animate the progress based on the scroll position
             //markers: true      // Show markers for the start and end positions (useful for debugging)
         }

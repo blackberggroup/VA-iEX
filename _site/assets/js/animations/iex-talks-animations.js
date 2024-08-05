@@ -8,13 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
         duration: 0.5,
         ease: 'power1.out',
         scrollTrigger: {
-            trigger: "#iex-talks-grid-row", // The element that triggers the animation
-            start: "top bottom",  // Start the animation when the top of the trigger element reaches 80% of the viewport height
-            end: "+=100", // End the animation when the bottom of the trigger element reaches the top of the viewport
+            trigger: "#iex-talks-grid-row h3", // The element that triggers the animation
+            start: "top 5%",       // Start the animation when the top of the element is 66% down from the top of the viewport
+            end: "+=100", 
             scrub: false,       // Smoothly animate the progress based on the scroll position
             //markers: true      // Show markers for the start and end positions (useful for debugging)
         }
     });
+    
 
     // Create a GSAP animation for image1
     gsap.to('#talks-image-1', {
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ease: "Power1.easeOut",          // No easing, linear animation
         scrollTrigger: {
             trigger: "#iex-talks-grid-row", // The element that triggers the animation
-            start: "top bottom",  // Start the animation when the top of the trigger element reaches 90% of the viewport height
+            start: "top 40%",  // Start the animation when the top of the trigger element reaches 90% of the viewport height
             end: "bottom top", // End the animation when the bottom of the trigger element reaches the top of the viewport
             scrub: true,       // Smoothly animate the progress based on the scroll position
             //markers: true      // Show markers for the start and end positions (useful for debugging)
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ease: "Power1.easeOut",          // No easing, linear animation
         scrollTrigger: {
             trigger: "#iex-talks-grid-row", // The element that triggers the animation
-            start: "top 100%",  // Start the animation when the top of the trigger element reaches 80% of the viewport height
+            start: "top 50%",  // Start the animation when the top of the trigger element reaches 80% of the viewport height
             end: "bottom top", // End the animation when the bottom of the trigger element reaches the top of the viewport
             scrub: true,       // Smoothly animate the progress based on the scroll position
             //markers: true      // Show markers for the start and end positions (useful for debugging)

@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
         duration: 0.5,
         ease: 'power1.out',
         scrollTrigger: {
-            trigger: "#iex-shark-tank-grid-row", // The element that triggers the animation
-            start: "top bottom+=100",  // Start the animation when the top of the trigger element reaches 80% of the viewport height
-            end: "+=100", // End the animation when the bottom of the trigger element reaches the top of the viewport
+            trigger: "#iex-shark-tank-grid-row h3", // The element that triggers the animation
+            start: "bottom 0%",       // Start the animation when the top of the element is 66% down from the top of the viewport
+            end: "+=100", 
             scrub: false,       // Smoothly animate the progress based on the scroll position
             //markers: true      // Show markers for the start and end positions (useful for debugging)
         }
