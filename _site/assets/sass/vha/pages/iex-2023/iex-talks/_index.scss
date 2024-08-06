@@ -38,4 +38,80 @@
         z-index: 20;
     }
 
+
+
+    // &__image-one {
+     
+
+    //     @include at-media(mobile) {
+    //         position: inherit;
+    //         left:0;
+    //          display: block;
+    //          margin: 0 auto;
+    //          max-width: 100%;
+
+        
+         
+    //      }
+    //      @include at-media(tablet-lg) {
+    //         position: relative;
+    //          top:50px;
+    //          left:-50px;
+    //          z-index: 99;
+    //          max-width: 300px;
+             
+         
+         
+         
+    //      }
+    //      @include at-media(desktop) {
+          
+    //         position: relative;
+    //         left:-50px;
+    //         top:50px;
+    //         z-index: 99;
+    //         max-width: 400px;
+ 
+            
+    //      }   
+
+        
+    // }
+
+    // &__image-two {
+    //     @include at-media(mobile) {
+    //        position: inherit;
+    //        left:0;
+    //         display: block;
+    //         margin: 0 auto;
+    //         margin-top: 70px;
+    //         max-width: 100%;
+
+         
+    //     }
+    //     @include at-media(tablet-lg) {
+    //         position: absolute;
+    //         top:0;
+    //         left:90px;
+    //         z-index: 20;
+    //         max-width: 300px;
+    //         margin-top: 0;
+          
+           
+           
+    //     }
+    //     @include at-media(desktop) {
+         
+    //         position: absolute;
+    //         top:-55px;
+    //         right: -140px;
+    //         z-index: 20;
+    //         max-width: 400px;
+    //         margin-top: 0;
+
+        
+    //     }        
+    // }
+
+
 }

@@ -9,3 +9,18 @@ section {
     position: relative;
     z-index: 1;
 }
+
+.iex-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @include at-media(tablet){
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    @include at-media(desktop-lg){
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+

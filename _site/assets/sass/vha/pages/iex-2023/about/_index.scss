@@ -2,33 +2,43 @@
 
 .iex-about {
     background-color: #{color("base-lightest")};
+    background-color: none;
 
-    &__image {
-        position: relative;
-    }
+    // &__image {
+    //     position: relative;
+    // }
     
     &__image-large {
-        position: relative;
-        z-index: 10;
-    }
-
-    &__image-small {
-        position: absolute;
-        bottom: -48px;
-        left: -48px;
-        z-index: 20;
-        max-width: 348px;
+     
+        margin-top: 0;
 
         @include at-media(mobile) {
-            width: 50%;
-        }
 
-        @include at-media(tablet-lg) {
-            width: 70%;
-        }
+         }
 
-        @include at-media(desktop) {
-            width: 100%;
-        }        
+         @include at-media(tablet-lg) {
+            margin-top: -200px;
+         }
+         @include at-media(desktop) {
+            margin-top: -300px;
+          
+         }   
+
+        
     }
+
+    // &__image-small {
+    //     margin-top: -150px;
+
+    //     @include at-media(mobile) {
+
+    //     }
+    //     @include at-media(tablet-lg) {
+
+    //     }
+    //     @include at-media(desktop) {
+         
+ 
+    //     }        
+    // }
 }

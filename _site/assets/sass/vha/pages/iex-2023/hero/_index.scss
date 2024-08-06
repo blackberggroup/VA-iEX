@@ -1,11 +1,336 @@
-.iex-hero {
-    background: radial-gradient(50.75% 50.75% at 50% 33.75%, #1D3766 0%, #11203C 100%);
+@use "uswds-core" as *;
 
-    &__logo-container {
-        max-width: 1600px;
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 1rem;
+.iex-hero {
+    background: url("../../assets/img/hero/iex-bg-pattern.svg") no-repeat 0;
+    background-size: cover;
+    transition: all 0.1s ease;
+
+    &.loading {
+        min-height: 100vh;
+    }
+
+    .iex-hero__logo {
+
+        .iex-logo {
+            
+            .x-logo {
+                transform-origin: center;
+                transform: scale(0.85);
+                opacity: 0;
+                position: relative;
+                width: 90px;
+        
+                @include at-media(mobile) {width: 110px;}
+                @include at-media(mobile-lg) {width: 150px;}
+                @include at-media(tablet) {width: 190px;}
+                @include at-media(tablet-lg){width: 250px;}
+                @include at-media(desktop){width: 350px;}
+                @include at-media(desktop-lg) {width: 416px;}
+            }
+            .i-logo {
+                transform-origin: bottom center;
+                transform: scaleY(0);
+                opacity: 0;
+                position: absolute;
+                z-index: 9999;
+                width: 5px;
+                margin-left: -11px;
+                margin-top: 9%;
+
+                @include at-media(mobile){width: 7px; margin-left: -13px;}
+                @include at-media(mobile-lg){width: 8px; margin-left: -19px; margin-top: 9%;}
+                @include at-media(tablet){width: 12px; margin-left: -23px; margin-top: 4%;}
+                @include at-media(tablet-lg){width: 14px; margin-left: -26px;}
+                @include at-media(desktop){width: 22px; margin-left: -41px;}
+                @include at-media(desktop-lg){width: auto; margin-left: -52px;}
+            }
+            .e-logo {
+                transform-origin: center;
+                transform: scale(0.85);
+                opacity: 0;
+                position: absolute;
+                z-index: 5;
+                margin-top: -7%;
+                width: 19px;
+
+                @include at-media(mobile){width: 23px;}
+                @include at-media(mobile-lg){width: 32px;}
+                @include at-media(tablet){width: 38px;}
+                @include at-media(tablet-lg){width: 45px;}
+                @include at-media(desktop){width: 70px;}
+                @include at-media(desktop-lg){width: auto;}
+            }
+        }
+
+        .chevrons {
+
+            img {
+                height: 69px;
+                position: absolute;
+                top: 50%;
+                opacity: 0;
+                transform: translate(-50px, -50%);
+    
+                &.image-right {
+                    transform: translate(50px, -50%);
+                }
+    
+                @include at-media(mobile){height: 87px;}
+                @include at-media(mobile-lg){height: 114px;}
+                @include at-media(tablet){height: 150px;}
+                @include at-media(tablet-lg){height: 198px;}
+                @include at-media(desktop){height: 277px;}
+                @include at-media(desktop-lg){height: 332px;}
+            }             
+                
+                #right-chevron-1 { right: -24%;}
+                #right-chevron-2 { right: -51%; }
+                #right-chevron-3 { right: -78%; }
+                #right-chevron-4 { right: -89%; }
+                #right-chevron-5 { 
+                    right: -89%; 
+                    height:40px;
+
+                    @include at-media(mobile){height: 66px;}
+                    @include at-media(mobile-lg){height: 49px;}
+                    @include at-media(tablet){height: 64px;}
+                    @include at-media(tablet-lg){height: 86px;}
+                    @include at-media(desktop){height: 126px;}
+                    @include at-media(desktop-lg){height: 150px;}      
+                }
+
+                #left-chevron-1 { left: -24%; }
+                #left-chevron-2 { left: -51%; }
+                #left-chevron-3 { left: -78%; }
+                #left-chevron-4 { left: -89%; }
+                #left-chevron-5 { 
+                    left: -89%; height:166px;
+                    height:40px;
+
+                    @include at-media(mobile){height: 66px;}
+                    @include at-media(mobile-lg){height: 49px;}
+                    @include at-media(tablet){height: 64px;}
+                    @include at-media(tablet-lg){height: 86px;}
+                    @include at-media(desktop){height: 126px;}
+                    @include at-media(desktop-lg){height: 150px;}      
+                }
+          }
+
+        .bar-gradient {
+            display: block;
+            width: 392px;
+            height: 4px;
+            position: absolute;
+            transform: scaleX(0);
+    
+            @include at-media(mobile-lg){ height: 6px; }
+            @include at-media(tablet){ height: 8px; }
+            @include at-media(tablet-lg){ height: 10px; }
+            @include at-media(desktop){ height: 14px; }
+            @include at-media(desktop-lg){ height: 17px; }
+    
+            &.bar-left-top {
+                top: 0;
+                left: 0;
+                clip-path: polygon(0 0, 97% 0, 100% 100%, 0 100%);
+                background: linear-gradient(to right, #1c1c1c, #0af);
+                transform: translateX(-85px) scaleX(0);
+                width: 88px;
+                transform-origin: left center;
+    
+                @include at-media(mobile){ 
+                    transform: translateX(-98px) scaleX(0);
+                    width: 100px;
+                }
+    
+                @include at-media(mobile-lg){ 
+                    transform: translateX(-136px) scaleX(0);
+                    width: 140px;
+                }
+        
+                @include at-media(tablet){ 
+                    transform: translateX(-174px) scaleX(0);
+                    width: 181px;
+                }
+            
+                @include at-media(tablet-lg){ 
+                    transform: translateX(-226px) scaleX(0);
+                    width: 235px;
+                }
+            
+                @include at-media(desktop){ 
+                    clip-path: polygon(0 0, 97% 0, 100% 100%, 0 100%);
+                    transform: translateX(-311px) scaleX(0);
+                    width: 325px;
+                }
+            
+                @include at-media(desktop-lg){ 
+                    clip-path: polygon(0 0, 97% 0, 100% 100%, 0 100%);
+                    width: 391px;
+                    transform: translateX(-373px) scaleX(0);
+                }
+            }
+    
+            &.bar-left-bottom {
+                bottom: 0;
+                left: 0;
+                -webkit-clip-path: polygon(0 0, 100% 0, 97% 100%, 0 100%);
+                clip-path: polygon(0 0, 100% 0, 97% 100%, 0 100%);
+                background: linear-gradient(to right, #1c1c1c, #0af);
+                transform: translateX(-81px) scaleX(0);
+                width: 78px;
+                transform-origin: left center;
+    
+                @include at-media(mobile){ 
+                    transform: translateX(-98px) scaleX(0);
+                    width: 95px;
+                }
+    
+                @include at-media(mobile-lg){ 
+                    transform: translateX(-134px) scaleX(0);
+                    width: 130px;
+                }
+        
+                @include at-media(tablet){ 
+                    transform: translateX(-174px) scaleX(0);
+                    width: 170px;
+                }
+            
+                @include at-media(tablet-lg){ 
+                    transform: translateX(-225px) scaleX(0);
+                    width: 220px;
+                }
+            
+                @include at-media(desktop){ 
+    
+                    transform: translateX(-311px) scaleX(0);
+                    width: 305px;
+                }
+            
+                @include at-media(desktop-lg){ 
+                    transform: translateX(-373px) scaleX(0);
+                    width: 367px;
+                }
+            }
+    
+            &.bar-right-top {
+                top: 0;
+                right: 0;
+                clip-path: polygon(3% 0%,100%0,100% 100%,0 100%);
+                background: linear-gradient(to left, #1c1c1c, #0af);
+                transform: translateX(85px) scaleX(0);
+                width: 88px;
+                transform-origin: right center;
+    
+                @include at-media(mobile){ 
+                    transform: translateX(98px) scaleX(0);
+                    width: 100px;
+                }
+    
+                @include at-media(mobile-lg){ 
+                    transform: translateX(136px) scaleX(0);
+                    width: 140px;
+                }
+        
+                @include at-media(tablet){ 
+                    transform: translateX(174px) scaleX(0);
+                    width: 181px;
+                }
+            
+                @include at-media(tablet-lg){ 
+                    transform: translateX(226px) scaleX(0);
+                    width: 235px;
+                }
+            
+                @include at-media(desktop){ 
+                    clip-path: polygon(3% 0%,100%0,100% 100%,0 100%);
+                    transform: translateX(311px) scaleX(0);
+                    width: 325px;
+                }
+            
+                @include at-media(desktop-lg){ 
+                    clip-path: polygon(3% 0%,100%0,100% 100%,0 100%);
+                    width: 391px;
+                    transform: translateX(373px) scaleX(0);
+                }
+            }
+    
+            &.bar-right-bottom {
+                bottom: 0;
+                right: 0;
+                -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 3% 100%);
+                clip-path: polygon(0% 0%, 100% 0, 100% 100%, 3% 100%);
+                background: linear-gradient(to left, #1c1c1c, #0af);
+                transform: translateX(81px) scaleX(0);
+                width: 78px;
+                transform-origin: right center;
+    
+                @include at-media(mobile){ 
+                    transform: translateX(98px) scaleX(0);
+                    width: 95px;
+                }
+    
+                @include at-media(mobile-lg){ 
+                    transform: translateX(134px) scaleX(0);
+                    width: 130px;
+                }
+        
+                @include at-media(tablet){ 
+                    transform: translateX(174px) scaleX(0);
+                    width: 170px;
+                }
+            
+                @include at-media(tablet-lg){ 
+                    transform: translateX(225px) scaleX(0);
+                    width: 220px;
+                }
+            
+                @include at-media(desktop){ 
+    
+                    transform: translateX(311px) scaleX(0);
+                    width: 305px;
+                }
+            
+                @include at-media(desktop-lg){ 
+                    transform: translateX(373px) scaleX(0);
+                    width: 367px;
+                }
+            }
+        }
+    }
+
+    .headlines {
+        h1,  h2 {
+            margin: 0;
+            opacity: 0;
+            transform: translateY(15px);
+        }
+    
+        h1 {
+            font-weight: 300;
+            font-size: 16px;
+            letter-spacing: 2px;
+            word-spacing: 1px;
+            line-height: 1;
+    
+            @include at-media(mobile-lg){font-size: 20px; letter-spacing: 4px;}
+            @include at-media(tablet){font-size: 26px;}
+            @include at-media(tablet-lg){font-size: 26px; letter-spacing: 9px;}
+            @include at-media(desktop){font-size: 36px; letter-spacing: 12px;}
+            @include at-media(desktop-lg){font-size: 36px; letter-spacing: 18px; word-spacing: 5px;}
+        }
+    
+        h2 {
+            font-size: 16px;
+            letter-spacing: 3px;
+            line-height: 1;
+    
+            @include at-media(mobile-lg){font-size: 33px;}
+            @include at-media(tablet){font-size: 39px; letter-spacing: 4px;}
+            @include at-media(tablet-lg){font-size: 53px; letter-spacing: 4px;}
+            @include at-media(desktop){font-size: 73px; letter-spacing: 5px; word-spacing: 5px;}
+            @include at-media(desktop-lg){font-size: 96px; letter-spacing: 3px; word-spacing: 5px;}
+        }
     }
 
 }

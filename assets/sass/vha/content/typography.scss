@@ -2,8 +2,8 @@
 @import "../../../../node_modules/rfs/scss";
 
 p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .intro {
@@ -19,7 +19,23 @@ h2, .h2 {
 }
 
 h3, .h3 {
-    @include font-size(22px);
+    font-size: 64px;
+    color: white;
+    line-height: 1;
+    font-weight: 700;
+    font-family: Myriad Pro, sans-serif;
+    letter-spacing: -1px;
+    padding: 0;
+    margin: 0;
+
+    @include at-media(tablet) {
+        font-size: 84px;
+        line-height: 1;
+    }
+    @include at-media(desktop-lg) {
+        font-size: 100px;
+        line-height: 90px;
+    }
 }
 
 h4, .h4 {
@@ -34,3 +50,8 @@ h4, .h4 {
 .display-6 { @include font-size(40px);}
 
 .font-condensed-bold { font-family: "Myriad-Pro-Condensed", Helvetica, arial, sans-serif; }
+
+.text-reveal {
+    position: relative;
+    overflow: hidden;
+}

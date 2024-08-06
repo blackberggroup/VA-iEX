@@ -1,15 +1,46 @@
+@use "uswds-core" as *;
+
 .iex-counter {
     background-color: #FBCF39;
+    background-color: none;
 
     &__title {
         h2, h3 { margin-top: 0; }
 
         h2 { 
-            margin-bottom: 1rem;
+            font-size: 24px;
+
+            @include at-media(desktop) {
+                font-size: 40px;
+            }
         }
 
-        h3 { 
+        p { 
             margin-bottom: 0;
+            font-size: 18px;
+            line-height: 1.25;
+
+            @include at-media(desktop) {
+                font-size: 22px;
+            }
+
+            a {
+                color: #00bde3;
+            }
+        }
+
+        a {
+            font-size: 18px;
+            line-height: 1.25;
+            color: #fff;
+
+            @include at-media(desktop) {
+                font-size: 22px;
+            }
+
+            &.usa-button {
+                font-size: 16px;
+            }
         }
         
     }

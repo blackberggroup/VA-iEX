@@ -1,0 +1,114 @@
+@use "uswds-core" as *;
+
+.iex-shark-tank {
+    .sharktank-bg-container {
+
+        @include at-media(mobile){
+            width: 40rem;
+            left: -6rem;
+            bottom: -15rem;
+            position: absolute;
+        }
+
+        @include at-media(mobile-lg){
+            width: 44rem;
+            left: -2rem;
+            bottom: -14rem;
+            position: absolute;
+        }
+        @include at-media(tablet){
+            width: 50em;
+            left: -4rem;
+            bottom: -20rem;
+            position: absolute;
+        }
+        @include at-media(tablet-lg){
+            width: 56rem;
+            left: 0;
+            bottom: -36rem;
+            position: absolute;
+        }
+        @include at-media(desktop){
+            width: 64rem;
+            left: 0;
+            bottom: -34rem;
+            position: absolute;
+        }
+        @include at-media(desktop-lg){
+            width: 84rem;
+            left: 0;
+            bottom: -42rem;
+            position: absolute;
+        }
+        @include at-media(widescreen){
+            width: auto;
+            left: 0;
+            bottom: -50rem;
+            position: absolute;
+        }
+    }
+
+
+    // &__image-one {
+     
+
+    //     @include at-media(mobile) {
+    //         position: inherit;
+    //         left:0;
+    //          display: block;
+    //          margin: 0 auto;
+    //          max-width: 100%;
+         
+    //      }
+    //      @include at-media(tablet-lg) {
+    //         position: relative;
+    //          top:50px;
+    //          left:0;
+    //          z-index: 99;
+    //          max-width: 300px;
+    //      }
+    //      @include at-media(desktop) {
+          
+    //         position: relative;
+    //         left:80px;
+    //         top:50px;
+    //         z-index: 99;
+    //         max-width: 400px;
+    //      }   
+
+        
+    // }
+
+    // &__image-two {
+    //     @include at-media(mobile) {
+    //        position: inherit;
+    //        left:0;
+    //         display: block;
+    //         margin: 0 auto;
+    //         margin-top: 70px;
+    //         max-width: 100%;
+
+         
+    //     }
+    //     @include at-media(tablet-lg) {
+    //         position: absolute;
+    //         top:0;
+    //         left:50px;
+    //         z-index: 20;
+    //         max-width: 300px;
+    //         margin-top: 0;
+           
+    //     }
+    //     @include at-media(desktop) {
+         
+    //         position: absolute;
+    //         top:-55px;
+    //         right: 190px;
+    //         z-index: 20;
+    //         max-width: 400px;
+    //         margin-top: 0;
+    //     }        
+    // }
+
+
+}

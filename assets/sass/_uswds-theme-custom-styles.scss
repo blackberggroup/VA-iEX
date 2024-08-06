@@ -51,3 +51,44 @@ i.e.
    --font-mono: #{family("mono")};  
  }
  
+
+ body {
+ 
+   background: red;
+   background: #13181c;
+ }
+
+//  h3{
+//   color: white;
+//   font-size: 70px;
+//   line-height: 80px;
+//   font-weight: 700;
+//   font-family: Myriad Pro, sans-serif;
+//   letter-spacing: -1px;
+//   padding: 0;
+//   margin: 0;
+//  }
+ h3 span{
+  color: #00BDE3;
+ 
+ }
+ h4{
+  color: white;
+  margin: 0;
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 700;
+ }
+
+ a {
+  color: #00BDE3;
+ }
+ .border-left-1px, .border-right-1px{
+  border-color:  #2E6276;
+ }
+ @media (max-width: 878px) { /* Adjust the max-width to match mobile-lg breakpoint */
+  .mobile-lg-border-left-0 {
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+}

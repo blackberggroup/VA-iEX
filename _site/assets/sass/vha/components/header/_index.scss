@@ -2,6 +2,11 @@
 
 .usa-header {
     background-color: #0e1d33;
+    background-color: none;
+}
+
+.usa-header + main {
+    border-top: none !important;
 }
 
 .usa-logo {
@@ -30,11 +35,11 @@
     color: #fff;
 
     &:hover {
-        color: #FEE685;
+        color: #00bde3;
     }
 
     &:focus {
-        outline: 0.25rem solid #face00;
+        outline: 0.25rem solid #00bde3;
     }
 }
 
@@ -54,7 +59,7 @@
 @include at-media(tablet) {
 
     .usa-header--extended .usa-logo {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 1rem 0 1.5rem 1rem;
     }
 
@@ -62,7 +67,7 @@
         color: #fff;
 
         &:hover {
-            color: #FEE685;
+            color: #00bde3;
         }
     }
 
@@ -76,7 +81,7 @@
 
     .usa-header--extended .usa-nav__primary-item>.usa-current::after, 
     .usa-header--extended .usa-nav__primary-item>.usa-nav__link:hover::after {
-        background-color: #FEE685;   
+        background-color: #00bde3;   
     }
 
     .usa-nav__submenu .usa-nav__submenu-item a {
@@ -85,13 +90,22 @@
 
 }
 
+
+@include at-media(tablet-lg) {
+
+    .usa-header--extended .usa-logo {
+        font-size: 2rem;
+        margin: 1rem 0 1.5rem 1rem;
+    }
+}
+
 @include at-media(desktop) {
     
     .usa-nav__primary button {
         color: #fff;
 
         &:hover {
-            color: #FEE685;
+            color: #00bde3;
         }
     }        
 
