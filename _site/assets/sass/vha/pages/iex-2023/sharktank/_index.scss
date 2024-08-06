@@ -1,6 +1,52 @@
 @use "uswds-core" as *;
 
-.iex-shark {
+.iex-shark-tank {
+    .sharktank-bg-container {
+
+        @include at-media(mobile){
+            width: 40rem;
+            left: -6rem;
+            bottom: -15rem;
+            position: absolute;
+        }
+
+        @include at-media(mobile-lg){
+            width: 44rem;
+            left: -2rem;
+            bottom: -14rem;
+            position: absolute;
+        }
+        @include at-media(tablet){
+            width: 50em;
+            left: -4rem;
+            bottom: -20rem;
+            position: absolute;
+        }
+        @include at-media(tablet-lg){
+            width: 56rem;
+            left: 0;
+            bottom: -36rem;
+            position: absolute;
+        }
+        @include at-media(desktop){
+            width: 64rem;
+            left: 0;
+            bottom: -34rem;
+            position: absolute;
+        }
+        @include at-media(desktop-lg){
+            width: 84rem;
+            left: 0;
+            bottom: -42rem;
+            position: absolute;
+        }
+        @include at-media(widescreen){
+            width: auto;
+            left: 0;
+            bottom: -50rem;
+            position: absolute;
+        }
+    }
 
 
     // &__image-one {

@@ -1,7 +1,57 @@
 @use "uswds-core" as *;
 
 .iex-keynote-speakers {
-    background: url("../../assets/img/hero/iex-bg-pattern.svg") no-repeat 0;
+    .speakers-bg-container {
+        // width: auto;
+        // left: 0;
+        // bottom: -800px;
+        // position: absolute;
+        // background: url("../../assets/img/hero/iex-bg-pattern.svg") no-repeat 0 0;
+
+        @include at-media(mobile){
+            width: 40rem;
+            left: -6rem;
+            top: -44rem;
+            position: absolute;
+        }
+
+        @include at-media(mobile-lg){
+            width: 44rem;
+            left: -6rem;
+            top: -44rem;
+            position: absolute;
+        }
+        @include at-media(tablet){
+            width: 50em;
+            left: -0;
+            top: -42rem;
+            position: absolute;
+        }
+        @include at-media(tablet-lg){
+            width: 56rem;
+            left: 0;
+            top: -42rem;
+            position: absolute;
+        }
+        @include at-media(desktop){
+            width: 64rem;
+            left: 0;
+            top: -34rem;
+            position: absolute;
+        }
+        @include at-media(desktop-lg){
+            width: 84rem;
+            left: 0;
+            top: -28rem;
+            position: absolute;
+        }
+        @include at-media(widescreen){
+            width: auto;
+            left: 0;
+            top: -24rem;
+            position: absolute;
+        }
+    }
 
 
     .keynote-speaker {
