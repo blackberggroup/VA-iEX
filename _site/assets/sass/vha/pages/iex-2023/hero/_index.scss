@@ -21,6 +21,7 @@
         background: radial-gradient(50% 50% at 50% 50%, #474A7B 0%, #122E50 100%);
         width: 370px;
         height: 370px;
+        border-radius: 50%;
 
         @include at-media(mobile-lg) {
             width: 470px;
@@ -237,13 +238,13 @@
             
                 @include at-media(desktop){ 
     
-                    transform: translateX(-311px) scaleX(0);
-                    width: 305px;
+                    transform: translateX(-315px) scaleX(0);
+                    width: 309px;
                 }
             
                 @include at-media(desktop-lg){ 
-                    transform: translateX(-373px) scaleX(0);
-                    width: 367px;
+                    transform: translateX(-370px) scaleX(0);
+                    width: 370px;
                 }
             }
     
@@ -321,13 +322,13 @@
             
                 @include at-media(desktop){ 
     
-                    transform: translateX(311px) scaleX(0);
-                    width: 305px;
+                    transform: translateX(315px) scaleX(0);
+                    width: 309px;
                 }
             
                 @include at-media(desktop-lg){ 
-                    transform: translateX(373px) scaleX(0);
-                    width: 367px;
+                    transform: translateX(370px) scaleX(0);
+                    width: 370px;
                 }
             }
         }
