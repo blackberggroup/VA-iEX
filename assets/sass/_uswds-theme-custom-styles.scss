@@ -56,6 +56,20 @@ i.e.
  
    background: red;
    background: #13181c;
+   background: linear-gradient(180deg, #122E50 10%, #11181D 16%);
+
+   @include at-media(mobile-lg) {
+    background: linear-gradient(180deg, #122E50 12%, #11181D 18%);
+   }
+
+   @include at-media(tablet-lg) {
+    background: linear-gradient(180deg, #122E50 15%, #11181D 20%);
+   }
+
+   @include at-media(desktop){
+    background: linear-gradient(180deg, #122E50 18%, #11181D 25%);
+   }
+
  }
 
 //  h3{

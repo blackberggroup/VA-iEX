@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var x = (event.clientX / window.innerWidth) - 0.5;
         var y = (event.clientY / window.innerHeight) - 0.5;
     
-        gsap.to('#iex-hero', {
+        gsap.to('#iex-hero .grid-container', {
             duration: 0.6,
             rotationY: 5 * x,
             rotationX: 5 * y,
@@ -90,15 +90,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function addInteractionListeners() {
 
-        document.querySelector('#iex-hero').addEventListener('mouseenter', function(event) {
+        document.querySelector('#iex-hero .grid-container').addEventListener('mouseenter', function(event) {
             document.addEventListener('mousemove', onMouseMove);
         });
 
-        document.querySelector('#iex-hero').addEventListener('mouseleave', function() {
+        document.querySelector('#iex-hero .grid-container').addEventListener('mouseleave', function() {
             document.removeEventListener('mousemove', onMouseMove);
 
             // Reset the element's rotation when the mouse leaves
-            gsap.to('#iex-hero', {
+            gsap.to('#iex-hero .grid-container', {
                 duration: 0.6,
                 rotationY: 0,
                 rotationX: 0,

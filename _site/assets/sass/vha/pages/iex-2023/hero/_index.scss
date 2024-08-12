@@ -1,12 +1,46 @@
 @use "uswds-core" as *;
 
 .iex-hero {
-    background: url("../../assets/img/hero/iex-bg-pattern.svg") no-repeat 0;
-    background-size: cover;
-    transition: all 0.1s ease;
+    // background: url("../../assets/img/hero/iex-bg-pattern.svg") no-repeat 0;
+    // background-size: cover;
 
     &.loading {
         min-height: 100vh;
+    }
+
+    .grid-container {
+        transition: all 0.1s ease;
+    }
+
+    &::before {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 50%; 
+        transform: translateX(-50%);
+        background: radial-gradient(50% 50% at 50% 50%, #474A7B 0%, #122E50 100%);
+        width: 370px;
+        height: 370px;
+
+        @include at-media(mobile-lg) {
+            width: 470px;
+            height: 470px;
+        }
+
+        @include at-media(tablet) {
+            width: 570px;
+            height: 570px;
+        }
+    
+        @include at-media(desktop) {
+            width: 670px;
+            height: 670px;
+        }
+    
+        @include at-media(widescreen){
+            width: 870px;
+            height: 870px;
+        }
     }
 
     .iex-hero__logo {
@@ -133,7 +167,7 @@
                 top: 0;
                 left: 0;
                 clip-path: polygon(0 0, 97% 0, 100% 100%, 0 100%);
-                background: linear-gradient(to right, #1c1c1c, #0af);
+                background: linear-gradient(to right, #153C61, #0af);
                 transform: translateX(-85px) scaleX(0);
                 width: 88px;
                 transform-origin: left center;
@@ -176,7 +210,7 @@
                 left: 0;
                 -webkit-clip-path: polygon(0 0, 100% 0, 97% 100%, 0 100%);
                 clip-path: polygon(0 0, 100% 0, 97% 100%, 0 100%);
-                background: linear-gradient(to right, #1c1c1c, #0af);
+                background: linear-gradient(to right, #153C61, #0af);
                 transform: translateX(-81px) scaleX(0);
                 width: 78px;
                 transform-origin: left center;
@@ -217,7 +251,7 @@
                 top: 0;
                 right: 0;
                 clip-path: polygon(3% 0%,100%0,100% 100%,0 100%);
-                background: linear-gradient(to left, #1c1c1c, #0af);
+                background: linear-gradient(to left, #153C61, #0af);
                 transform: translateX(85px) scaleX(0);
                 width: 88px;
                 transform-origin: right center;
@@ -260,7 +294,7 @@
                 right: 0;
                 -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 3% 100%);
                 clip-path: polygon(0% 0%, 100% 0, 100% 100%, 3% 100%);
-                background: linear-gradient(to left, #1c1c1c, #0af);
+                background: linear-gradient(to left, #153C61, #0af);
                 transform: translateX(81px) scaleX(0);
                 width: 78px;
                 transform-origin: right center;
