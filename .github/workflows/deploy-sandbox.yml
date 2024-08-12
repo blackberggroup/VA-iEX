@@ -29,6 +29,7 @@ jobs:
           **/.git*
           **/.git*/**
           **/node_modules/**
+          **/assets/coming-soon/**
           **/assets/sass/**
           **/uswds/img/material-icons-deprecated/**
           **/uswds/img/material-icons/*

@@ -34,3 +34,8 @@ Develop Branch -
 1. Run gulp to watch any changes you make to `scss` files:
     ```bash
     gulp watch
+
+## NOTES: "Coming Soon" page
+1. The "Coming Soon" page is a duplicate of the home page (index.html) with just the hero.html _include
+
+1. The resulting compiled page, _site/coming-soon/index.html, is copied directly into _site and renamed "coming-soon.html" - _site/coming-soon.html
