@@ -1,48 +1,6 @@
 @use "uswds-core" as *;
 
 .iex-registration {
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-
-    @include at-media(mobile) {
-        background-image: url('../../assets/img/iex-2023/registration-bg-05x.jpg');
-    }
-
-    @include at-media(tablet-lg) {
-        background-image: url('../../assets/img/iex-2023/registration-bg.jpg');
-    }    
-
-    &:after {
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-color: rgba(10, 19, 36,.9);
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-
-    &__svg-wrapper {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-    }
-
-    &__content-wrapper {
-        position: relative;
-        z-index: 20;
-    }
-
-    .usa-card {
-        height: 100%;
-        
-        &__container {
-            border: none;
-        }
-
-    }
-
+    background-color: #{color("base-lightest")};
+    background-color: transparent;
 }
