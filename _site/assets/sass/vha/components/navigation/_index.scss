@@ -1,3 +1,9 @@
+// Reduce font size for extended menu names
+.font-body-md {
+    font-size: 1.08rem !important;
+}
+
+
 .vcl-button {
     background: #8b0a03 url(../../assets/uswds/img/usa-icons/chevron_right-white.svg) calc(100% - 0.3em) 0.5rem no-repeat;
     background-size: 1.5em auto;
