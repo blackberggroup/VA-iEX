@@ -43,6 +43,20 @@
     }
 }
 
+// Reduce padding for extended menu names
+@media (min-width: 64em) {
+    .usa-nav__primary>.usa-nav__primary-item>a {
+        padding: .8rem !important;
+    }
+    .usa-nav__primary button {
+        padding: .8rem !important;
+    }
+}
+
+.usa-nav__primary .usa-accordion__button span {
+    padding-right: 0 !important;
+}
+
 
 
 @include at-media(mobile) {    
