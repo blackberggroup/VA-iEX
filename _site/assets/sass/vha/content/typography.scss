@@ -1,6 +1,10 @@
 @use "uswds-core" as *;
 @import "../../../../node_modules/rfs/scss";
 
+.usa-prose p {
+    font-size: 16px;
+}
+
 p {
     font-size: 20px;
     line-height: 28px;
